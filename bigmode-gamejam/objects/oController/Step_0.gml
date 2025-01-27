@@ -9,6 +9,7 @@ if (selected_circle != noone) {
             var newWire = instance_create_layer(0, 0, "Instances", oLine);
             newWire.start_circle = selected_circle;
             newWire.end_circle = dest_circle;
+			drawWire(newWire.path, newWire.start_circle.x, newWire.start_circle.y, newWire.end_circle.x, newWire.end_circle.y);
 
             array_push(selected_circle.connected_circles, dest_circle);
             array_push(dest_circle.connected_circles, selected_circle);

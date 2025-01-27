@@ -39,6 +39,7 @@
     {"id":{"name":"oLine","path":"objects/oLine/oLine.yy",},},
     {"id":{"name":"oSquare","path":"objects/oSquare/oSquare.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"sCircle","path":"sprites/sCircle/sCircle.yy",},},
     {"id":{"name":"sLine","path":"sprites/sLine/sLine.yy",},},
     {"id":{"name":"sSquare","path":"sprites/sSquare/sSquare.yy",},},
