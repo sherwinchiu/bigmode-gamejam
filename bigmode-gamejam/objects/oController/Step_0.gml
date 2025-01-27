@@ -1,4 +1,6 @@
-<<<<<<< Updated upstream
+if (pause) { // if game is paused
+	
+} else {
 var mouse_x_start = window_views_mouse_get_x();
 var mouse_y_start = window_views_mouse_get_y();
 var is_panning = false;
@@ -38,16 +40,9 @@ camera_set_view_pos(camera, view_xview, view_yview);
 camera_set_view_size(camera, view_wview, view_hview);
 
 
-if (selected_circle != noone) {
-    if (mouse_check_button_released(mb_left)) {
-=======
-if (pause) { // if game is paused
-	
-} else {
+
 	if (selected_circle != noone) {
 	    if (mouse_check_button_released(mb_left)) {
->>>>>>> Stashed changes
-		
 			// find what circle you drop it on
 	        var dest_circle = instance_position(mouse_x, mouse_y, oCircle);
 
