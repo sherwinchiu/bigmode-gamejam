@@ -1,11 +1,12 @@
 /// @description -1 for N/A, 
-// 1 - coal
-// 2 - grass
-// 3 - oil sands
-// 4 - tree
-// 5 - water
+// 0 - coal
+// 1 - grass
+// 2 - oil sands
+// 3 - tree
+// 4 - water
 
 hovering = false;
 clicked = false;
+has_building = false;
 
 current_tile = -1;

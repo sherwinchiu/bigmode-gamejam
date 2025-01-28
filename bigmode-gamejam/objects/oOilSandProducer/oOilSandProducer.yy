@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oToolbarButtondupforbutsmade",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oOilSandProducer",
+  "eventList":[],
   "managed":true,
-  "name":"oToolbarButtondupforbutsmade",
+  "name":"oOilSandProducer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Toolbar",
-    "path":"folders/Objects/Toolbar.yy",
+    "name":"producer objects",
+    "path":"folders/Objects/producer objects.yy",
   },
   "parentObjectId":{
-    "name":"oToolbarButtonParent",
-    "path":"objects/oToolbarButtonParent/oToolbarButtonParent.yy",
+    "name":"oProducerParent",
+    "path":"objects/oProducerParent/oProducerParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sToolbarButton",
-    "path":"sprites/sToolbarButton/sToolbarButton.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
