@@ -5,8 +5,8 @@ zoom_speed = 10;
 
 view_wview = 1366;
 view_hview = 768;
-view_xview = 0;
-view_yview = 0;
+global.view_xview = 0;
+global.view_yview = 0;
 window_max_w = view_wview;
 window_max_h = view_hview;
 is_panning = false;

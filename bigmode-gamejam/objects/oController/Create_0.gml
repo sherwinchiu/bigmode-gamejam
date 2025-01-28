@@ -7,6 +7,8 @@ wire_length_available = 0; // total wire length for player to use
 
 pause = false;
 
+window_set_size(1920, 1080);
+
 global.energy_output = 0; // tracking total energy output of producers
 global.curr_building = 0; // building used for building on producers
 
@@ -18,8 +20,6 @@ global.producer_order = [oCoalProducer, oGrassProducer, oOilSandProducer, oTreeP
 global.producer_energy = [2, 0, 10, 2, 3];
 
 // disable week display
-
-
 week_num = 1;
 
 var lay_id = layer_get_id("Week_Display");
