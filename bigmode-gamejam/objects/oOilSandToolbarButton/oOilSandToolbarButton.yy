@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oGrassProducer",
-  "eventList":[],
+  "%Name":"oOilSandToolbarButton",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oGrassProducer",
+  "name":"oOilSandToolbarButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"producer objects",
-    "path":"folders/Objects/producer objects.yy",
+    "name":"Toolbar",
+    "path":"folders/Objects/Toolbar.yy",
   },
   "parentObjectId":{
-    "name":"oProducerParent",
-    "path":"objects/oProducerParent/oProducerParent.yy",
+    "name":"oToolbarButtonParent",
+    "path":"objects/oToolbarButtonParent/oToolbarButtonParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGrassProducer",
-    "path":"sprites/sGrassProducer/sGrassProducer.yy",
+    "name":"sToolbarButton",
+    "path":"sprites/sToolbarButton/sToolbarButton.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -9,7 +9,10 @@
     "name":"producer objects",
     "path":"folders/Objects/producer objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oProducerParent",
+    "path":"objects/oProducerParent/oProducerParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCoalProducer",
+    "path":"sprites/sCoalProducer/sCoalProducer.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

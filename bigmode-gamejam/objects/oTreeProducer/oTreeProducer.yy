@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sTreeProducer",
+    "path":"sprites/sTreeProducer/sTreeProducer.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

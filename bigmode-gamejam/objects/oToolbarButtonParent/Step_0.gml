@@ -7,15 +7,5 @@ if (hovering && mouse_check_button_pressed(mb_left))
 {
 	clicked = true;
 	activate_button();
-} 
-
-if (mouse_check_button_released(mb_left)) 
-{
-	clicked = false;
-
-	if (hovering) 
-	{
-	
-	}
-	
+	show_debug_message("button pressed" + string(global.curr_building));
 } 
