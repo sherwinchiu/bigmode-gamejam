@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oProducerParent",
+  "%Name":"oHouse",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oProducerParent",
+  "name":"oHouse",
   "overriddenProperties":[],
   "parent":{
-    "name":"producer objects",
-    "path":"folders/Objects/producer objects.yy",
+    "name":"consumer objects",
+    "path":"folders/Objects/consumer objects.yy",
   },
   "parentObjectId":{
-    "name":"oWireDraggable",
-    "path":"objects/oWireDraggable/oWireDraggable.yy",
+    "name":"oConsumerParent",
+    "path":"objects/oConsumerParent/oConsumerParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCoalProducer",
+    "path":"sprites/sCoalProducer/sCoalProducer.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

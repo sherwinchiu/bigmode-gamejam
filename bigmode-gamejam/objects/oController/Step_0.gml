@@ -4,7 +4,7 @@ if (pause) { // if game is paused
 	if (selected_circle != noone) {
 	    if (mouse_check_button_released(mb_left)) {
 			// find what circle you drop it on
-	        var dest_circle = instance_position(mouse_x, mouse_y, oCircle);
+	        var dest_circle = instance_position(mouse_x, mouse_y, oWireDraggable);
 
 	        if (dest_circle != noone && dest_circle != selected_circle) {
 

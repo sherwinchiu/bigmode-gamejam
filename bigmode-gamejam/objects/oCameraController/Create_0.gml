@@ -17,5 +17,5 @@ max_zoom_width = room_width * 2;
 min_zoom_height = 100;
 max_zoom_height = room_height * 2;
 
-camera_set_view_pos(camera, view_xview, view_yview);
+camera_set_view_pos(camera, global.view_xview, global.view_yview);
 camera_set_view_size(camera, view_wview, view_hview);
