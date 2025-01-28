@@ -40,6 +40,7 @@
   },
   "name":"bigmode-gamejam",
   "resources":[
+    {"id":{"name":"oCameraController","path":"objects/oCameraController/oCameraController.yy",},},
     {"id":{"name":"oCircle","path":"objects/oCircle/oCircle.yy",},},
     {"id":{"name":"oCoalProducer","path":"objects/oCoalProducer/oCoalProducer.yy",},},
     {"id":{"name":"oCoalTile","path":"objects/oCoalTile/oCoalTile.yy",},},
