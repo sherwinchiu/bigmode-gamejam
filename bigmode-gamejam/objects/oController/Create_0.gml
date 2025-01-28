@@ -20,8 +20,8 @@ global.producer_order = [oCoalProducer, oGrassProducer, oOilSandProducer, oTreeP
 // track producer points
 global.producer_energy = [2, 0, 10, 2, 3];
 //-------------------- CONSUMER TRACKING ------------------------------
-global.consumer_order = [oHouse, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
-global.consumer_demand = [1, 5, 10, 7, 4, 3];
+//global.consumer_order = [oHouse, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
+//global.consumer_demand = [1, 5, 10, 7, 4, 3];
 
 
 

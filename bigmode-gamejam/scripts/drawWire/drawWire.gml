@@ -9,10 +9,12 @@ function drawWire(path, x1, y1, x2, y2){
 		mid_y = ((y1 + y2)/2 + 100/log10(dist));
 	}
 	
-	//show_debug_message(mid_x);
-	//show_debug_message(mid_y);
-	
 	path_add_point(path, x1, y1, 100);
 	path_add_point(path, mid_x, mid_y, 100);
 	path_add_point(path, x2, y2, 100);
+	// draw circles along path
+		
+	for(var i = 0; i <= 1; i+= 0.01) {
+		draw_circle(path_get_x(path, i), path_get_y(path, i), 3, false);
+	}
 }
