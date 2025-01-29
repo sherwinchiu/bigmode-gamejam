@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oGrassProducer",
+  "%Name":"oApartment",
   "eventList":[],
   "managed":true,
-  "name":"oGrassProducer",
+  "name":"oApartment",
   "overriddenProperties":[],
   "parent":{
-    "name":"producer objects",
-    "path":"folders/Objects/producer objects.yy",
+    "name":"consumer objects",
+    "path":"folders/Objects/consumer objects.yy",
   },
   "parentObjectId":{
-    "name":"oProducerParent",
-    "path":"objects/oProducerParent/oProducerParent.yy",
+    "name":"oConsumerParent",
+    "path":"objects/oConsumerParent/oConsumerParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sAirport",
+    "path":"sprites/sAirport/sAirport.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

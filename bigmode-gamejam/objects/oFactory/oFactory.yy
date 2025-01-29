@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oHouse",
+  "%Name":"oFactory",
   "eventList":[],
   "managed":true,
-  "name":"oHouse",
+  "name":"oFactory",
   "overriddenProperties":[],
   "parent":{
     "name":"consumer objects",
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sHouse",
-    "path":"sprites/sHouse/sHouse.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
