@@ -3,6 +3,14 @@
 selected_circle = noone;
 dragging_wire = false;
 
+// reset viewport and camera
+global.res_width = 1920;
+global.res_height = 1080;
+
+window_set_size(global.res_width, global.res_height);
+surface_resize(application_surface, global.res_width, global.res_height);
+
+
 wire_length_available = 0; // total wire length for player to use
 
 pause = false;
