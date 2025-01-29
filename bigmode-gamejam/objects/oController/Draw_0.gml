@@ -3,5 +3,5 @@ if (dragging_wire && selected_circle != noone) {
 	path_set_kind(path, 1);
 	path_set_closed(path, 0);
 
-	drawWire(path, selected_circle.x, selected_circle.y, mouse_x, mouse_y);
+	drawWire(path, selected_circle.x, selected_circle.y, mouse_x, mouse_y, true);
 }
