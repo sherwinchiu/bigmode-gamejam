@@ -24,17 +24,16 @@ global.curr_building = 0; // building used for building on producers
 // track producers & it's tiles
 tile_order = [oCoalTile, oGrassTile, oOilSandTile, oTreeTile, oWaterTile];
 // track respective producer to each tile
-global.producer_order = [oCoalProducer, oGrassProducer, oOilSandProducer, oTreeProducer, oWaterProducer];
+global.producer_order = [oCoalProducer, oOilSandProducer, oTreeProducer, oWaterProducer];
 // track producer points
-global.producer_energy = [2, 0, 10, 2, 3];
+global.producer_energy = [2, 10, 2, 3];
 //-------------------- CONSUMER TRACKING ------------------------------
 //global.consumer_order = [oHouse, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
 //global.consumer_demand = [1, 5, 10, 7, 4, 3];
 
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
-
-random_consumer_spawn = random_range(10, 20);
+random_consumer_spawn = random_range(5, 15);
 alarm_set(1, game_get_speed(gamespeed_fps) * random_consumer_spawn);
 
 
