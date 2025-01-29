@@ -6,6 +6,12 @@ function connectWires(c_1, c_2){
 }
 
 /*
+current_component : what component id the game is on
+global.components[] : an array of arrays, array @ each id = to array of consumers in that component
+global.connections[] : array of adjacency lists keeping track of connections (not sure if this is used so far)
+global.energy_output[] : array @ each id = sum of producer energy production / tick in that component
+global.energy_in[] : array @ each id = energy available to the consumers (energy in the component)
+
 -----THIS FILE-----
 graph has connected components -> producers, consumers
 global component_id variable that tracks the current id of the component you're on
