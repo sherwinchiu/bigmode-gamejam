@@ -29,4 +29,6 @@ if (pause) { // if game is paused
 	        dragging_wire = true;
 	    }
 	}
+	
+	// electricity calculations
 }

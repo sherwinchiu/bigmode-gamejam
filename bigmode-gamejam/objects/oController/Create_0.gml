@@ -17,7 +17,12 @@ pause = false;
 
 window_set_size(1920, 1080);
 
-global.energy_output = 0; // tracking total energy output of producers
+// current component id
+global.component_id = 0;
+global.components = [];
+global.connections = [];
+global.energy_output = []; // tracking total energy output of producers
+global.energy_in = []; // tracking energy available
 global.curr_building = 0; // building used for building on producers
 
 //-------------------- PRODUCER TRACKING -----------------------------
@@ -29,7 +34,8 @@ global.producer_order = [oCoalProducer, oGrassProducer, oOilSandProducer, oTreeP
 global.producer_energy = [2, 0, 10, 2, 3];
 //-------------------- CONSUMER TRACKING ------------------------------
 //global.consumer_order = [oHouse, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
-//global.consumer_demand = [1, 5, 10, 7, 4, 3];
+global.consumer_order = [oHouse];
+global.consumer_demand = [1, 5, 10, 7, 4, 3];
 
 
 
