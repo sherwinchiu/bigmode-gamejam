@@ -17,7 +17,7 @@ function drawWire(path, x1, y1, x2, y2, genPath){
 	}
 	
 	// draw circles along path	
-	for(var i = 0; i <= 1; i+= 0.0001) {
+	for(var i = 0; i <= 1; i+= 0.001) {
 		draw_circle(path_get_x(path, i), path_get_y(path, i), 3, false);
 	}
 }

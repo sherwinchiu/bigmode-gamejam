@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGrassTile",
-    "path":"sprites/sGrassTile/sGrassTile.yy",
+    "name":"sBackgroundTile",
+    "path":"sprites/sBackgroundTile/sBackgroundTile.yy",
   },
   "spriteMaskId":null,
   "visible":true,
