@@ -9,10 +9,7 @@
     "name":"consumer objects",
     "path":"folders/Objects/consumer objects.yy",
   },
-  "parentObjectId":{
-    "name":"oConsumerParent",
-    "path":"objects/oConsumerParent/oConsumerParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sHouse",
-    "path":"sprites/sHouse/sHouse.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

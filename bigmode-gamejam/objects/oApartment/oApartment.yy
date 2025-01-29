@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sAirport",
-    "path":"sprites/sAirport/sAirport.yy",
+    "name":"sApartment",
+    "path":"sprites/sApartment/sApartment.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -54,6 +54,7 @@
     {"id":{"name":"oFactory","path":"objects/oFactory/oFactory.yy",},},
     {"id":{"name":"oGrassTile","path":"objects/oGrassTile/oGrassTile.yy",},},
     {"id":{"name":"oGrassToolbarButton","path":"objects/oGrassToolbarButton/oGrassToolbarButton.yy",},},
+    {"id":{"name":"oHouse","path":"objects/oHouse/oHouse.yy",},},
     {"id":{"name":"oLine","path":"objects/oLine/oLine.yy",},},
     {"id":{"name":"oOilSandProducer","path":"objects/oOilSandProducer/oOilSandProducer.yy",},},
     {"id":{"name":"oOilSandTile","path":"objects/oOilSandTile/oOilSandTile.yy",},},

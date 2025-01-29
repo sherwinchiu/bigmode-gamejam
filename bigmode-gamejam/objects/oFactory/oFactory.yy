@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sFactory",
+    "path":"sprites/sFactory/sFactory.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
