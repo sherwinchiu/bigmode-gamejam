@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script5",
+  "%Name":"drawConsumerBuilding",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script5",
+  "name":"drawConsumerBuilding",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
