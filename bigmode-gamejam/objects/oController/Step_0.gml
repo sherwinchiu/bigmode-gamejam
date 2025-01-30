@@ -7,15 +7,8 @@ if (global.paused) { // if game is paused
 	        var dest_circle = instance_position(mouse_x, mouse_y, oWireDraggable);
 
 	        if (dest_circle != noone && dest_circle != selected_circle) {	
-				// below moved to connectWires
-	            //var newWire = instance_create_layer(0, 0, "Instances", oLine);
-	            //newWire.start_circle = selected_circle;
-	            //newWire.end_circle = dest_circle;
 				
 				connectWires(selected_circle, dest_circle);
-
-	            //array_push(selected_circle.connected_circles, dest_circle);
-	            //array_push(dest_circle.connected_circles, selected_circle);
 				
 	            // reset states
 	            selected_circle.is_selected = false;
