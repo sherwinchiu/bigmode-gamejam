@@ -19,7 +19,7 @@
   "height":120,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c011088a-7822-40b2-a941-2868f54f16dd","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"c011088a-7822-40b2-a941-2868f54f16dd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d135b16d-24ea-4745-b9e3-f927133b2ded","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"d135b16d-24ea-4745-b9e3-f927133b2ded","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"201b4889-1268-4b8f-a865-5448257c1735","blendMode":0,"displayName":"default","isLocked":false,"name":"201b4889-1268-4b8f-a865-5448257c1735","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sBackgroundTile",
