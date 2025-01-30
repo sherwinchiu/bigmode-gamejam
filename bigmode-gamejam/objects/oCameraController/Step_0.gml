@@ -1,7 +1,6 @@
 if (global.week_end && !global.leveled_up) {
 	if (cur_level < max_level) {
 		cur_level++;	
-	}
 	
 	var old_w = view_wview;
 	var old_h = view_hview;
@@ -13,6 +12,14 @@ if (global.week_end && !global.leveled_up) {
 	show_debug_message("hellO");
 	
 	global.leveled_up = true;
+	/*
+		var _vx = camera_get_view_x(view_camera[0]);
+		var _vy = camera_get_view_y(view_camera[0]);
+		var _vw = camera_get_view_width(view_camera[0]);
+		var _vh = camera_get_view_height(view_camera[0]);
+		instance_activate_region(_vx, _vy, _vw, _vh, false);
+	*/
+	}
 }
 
 if (mouse_check_button_pressed(mb_middle)) {
