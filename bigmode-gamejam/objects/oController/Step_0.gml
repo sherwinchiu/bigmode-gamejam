@@ -28,3 +28,5 @@ if (global.paused) { // if game is paused
 	// electricity calculations
 	checkPower();
 }
+
+var ghost_building = instance_create_layer(mouse_x, mouse_y, "Instances", global.producer_order[global.curr_building]);

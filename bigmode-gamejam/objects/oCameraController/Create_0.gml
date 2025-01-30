@@ -7,6 +7,7 @@ show_debug_message(string(global.view_xview) + " " + string(global.view_yview));
 instance_deactivate_all(true);
 instance_activate_layer("GUI");
 instance_activate_object(oController);
+instance_activate_layer("GUI");
 instance_activate_region(global.view_xview, global.view_yview, view_wview, view_hview, true);
 
 buttons = [oCoalToolbarButton, oGrassToolbarButton, oOilSandToolbarButton, oToolbarButtonParent, oTreeToolbarButton, oWaterToolbarButton];
