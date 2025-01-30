@@ -1,4 +1,4 @@
-if (pause) { // if game is paused
+if (global.paused) { // if game is paused
 	
 } else {
 	if (selected_circle != noone) {

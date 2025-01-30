@@ -50,6 +50,7 @@
     {"id":{"name":"oCoalTile","path":"objects/oCoalTile/oCoalTile.yy",},},
     {"id":{"name":"oCoalToolbarButton","path":"objects/oCoalToolbarButton/oCoalToolbarButton.yy",},},
     {"id":{"name":"oConsumerParent","path":"objects/oConsumerParent/oConsumerParent.yy",},},
+    {"id":{"name":"oContinueButton","path":"objects/oContinueButton/oContinueButton.yy",},},
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
     {"id":{"name":"oFactory","path":"objects/oFactory/oFactory.yy",},},
     {"id":{"name":"oGrassTile","path":"objects/oGrassTile/oGrassTile.yy",},},

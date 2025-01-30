@@ -2,8 +2,10 @@
 // You can write your code in this editor
 
 
-pause = true;
-
+global.paused = true;
+global.week_end = true;
+global.leveled_up = false;
+show_debug_message("week ended");
 // show Week_Display Layer
 var lay_id = layer_get_id("Week_Display");
 layer_set_visible(lay_id, true); 
@@ -12,4 +14,5 @@ layer_set_visible(lay_id, true);
 // add a length of rail
 wire_length_available += 40;
 
-alarm_set(0, game_get_speed(gamespeed_fps) * 120);  // reset alarm on call
+
+alarm_set(0, game_get_speed(gamespeed_fps) * 5);  // reset alarm on call

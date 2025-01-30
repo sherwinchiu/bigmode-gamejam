@@ -19,7 +19,7 @@ function checkPower() {
 	}
 	for (var i = 0; i < n; i++) {
 		if (global.allConsumers[i].current_demand > 0) {
-			show_debug_message("ID: " + string(i) + " !!! NOT POWERED: need " + string(global.allConsumers[i].current_demand));
+			//show_debug_message("ID: " + string(i) + " !!! NOT POWERED: need " + string(global.allConsumers[i].current_demand));
 		}
 	}
 }
