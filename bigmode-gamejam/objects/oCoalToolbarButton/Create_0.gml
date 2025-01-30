@@ -5,5 +5,5 @@
 event_inherited();
 
 activate_button = function() { // function to override
-	global.curr_building = 0; // change button
+	global.curr_building = global.COAL_ID; // change button
 }

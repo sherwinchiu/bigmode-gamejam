@@ -2,4 +2,4 @@
 // You can write your code in this editor
 event_inherited();
 
-current_tile = 0;
+current_tile = global.COAL_ID;

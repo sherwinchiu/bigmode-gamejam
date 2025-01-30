@@ -3,6 +3,6 @@
 //event_inherited();
 connected_circles = [];
 is_selected = false;
-consumer_type = -1;
+consumer_type = global.FACTORY_ID;
 current_demand = -1;
 building_type = 1;

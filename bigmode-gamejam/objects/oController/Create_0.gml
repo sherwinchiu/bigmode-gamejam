@@ -17,26 +17,37 @@ pause = false;
 
 window_set_size(1920, 1080);
 
-// current component id
-global.component_id = 0;
-global.components = [];
-global.connections = [];
-global.energy_output = []; // tracking total energy output of producers
-global.energy_in = []; // tracking energy available
+
 global.curr_building = 0; // building used for building on producers
+global.allProducers = []; // store all producers
+global.allConsumers = [];
 
 //-------------------- PRODUCER TRACKING -----------------------------
 // track producers & it's tiles
 tile_order = [oCoalTile, oGrassTile, oOilSandTile, oTreeTile, oWaterTile];
 // track respective producer to each tile
-global.producer_order = [oCoalProducer, oOilSandProducer, oTreeProducer, oWaterProducer];
+global.producer_order = [oCoalProducer, oOilSandProducer, oTreeProducer, oWaterProducer, oTransmission]; // ***** TRANSMISSION TOWER TEMPORARY FOR TESTING*****
+global.COAL_ID = 0;
+global.OIL_ID = 1;
+global.TREE_ID = 2;
+global.WATER_ID = 3;
+
+global.TRANMISSIONTOWERID = 4; // *****TEMPORARY FOR TESTING*****
+
 // track producer points
 global.producer_energy = [2, 10, 2, 3];
 //-------------------- CONSUMER TRACKING ------------------------------
-//global.consumer_order = [oHouse, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
+//global.consumer_order = [oHouse, oApartment, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
 global.consumer_order = [oHouse];
-global.consumer_demand = [1, 5, 10, 7, 4, 3];
+global.HOUSE_ID = 0;
+global.APARTMENT_ID = 1;
+global.BUSINESS_ID = 2;
+global.FACTORY_ID = 3;
+global.COMMUNITY_ID = 4;
+global.EMERGENCY_ID = 5;
+global.AIRPORT_ID = 6;
 
+global.consumer_demand = [1, 5, 5, 10, 7, 4, 3];
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
 random_consumer_spawn = random_range(5, 15);

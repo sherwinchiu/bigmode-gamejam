@@ -2,4 +2,5 @@
 // You can write your code in this editor
 event_inherited();
 
-current_tile = 1;
+current_tile = global.TRANMISSIONTOWERID;
+// ***** TEMPORARY FOR TESTING ^^ *****
