@@ -53,7 +53,7 @@ global.consumer_demand = [1, 5, 5, 10, 7, 4, 3];
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
 random_consumer_spawn = random_range(5, 15);
-alarm_set(1, game_get_speed(gamespeed_fps) * 2);
+alarm_set(1, game_get_speed(gamespeed_fps) * 1);
 
 
 //-------------------- DISPLAY WEEK END ------------------------------
