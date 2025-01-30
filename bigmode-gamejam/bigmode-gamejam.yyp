@@ -82,6 +82,7 @@
     {"id":{"name":"drawWire","path":"scripts/drawWire/drawWire.yy",},},
     {"id":{"name":"placeBuilding","path":"scripts/placeBuilding/placeBuilding.yy",},},
     {"id":{"name":"Script5","path":"scripts/Script5/Script5.yy",},},
+    {"id":{"name":"seqHouse","path":"sequences/seqHouse/seqHouse.yy",},},
     {"id":{"name":"sAirport","path":"sprites/sAirport/sAirport.yy",},},
     {"id":{"name":"sApartment","path":"sprites/sApartment/sApartment.yy",},},
     {"id":{"name":"sBackgroundTile","path":"sprites/sBackgroundTile/sBackgroundTile.yy",},},
