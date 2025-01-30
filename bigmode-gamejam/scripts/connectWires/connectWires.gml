@@ -7,6 +7,7 @@ function connectWires(c1, c2) {
 	var consumerID = 1;
 	var transmissionID = 2;
 	var connected = false;
+	show_debug_message("connecting");
 	
 	if (c1.building_type > c2.building_type) return connectWires(c2, c1);
 	

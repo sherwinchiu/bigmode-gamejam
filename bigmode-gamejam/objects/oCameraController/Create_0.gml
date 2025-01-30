@@ -5,8 +5,15 @@ global.view_yview = (room_height / 2) - (view_hview / 2) - 60;
 show_debug_message(string(global.view_xview) + " " + string(global.view_yview));
 
 instance_deactivate_all(true);
+instance_activate_layer("GUI");
 instance_activate_object(oController);
 instance_activate_region(global.view_xview, global.view_yview, view_wview, view_hview, true);
+
+buttons = [oCoalToolbarButton, oGrassToolbarButton, oOilSandToolbarButton, oToolbarButtonParent, oTreeToolbarButton, oWaterToolbarButton];
+
+for (var i = 0; i < array_length(buttons); i++) {
+	instance_activate_object(buttons[i]);	
+}
 
 camera = camera_create_view(global.view_xview, global.view_yview, view_wview, view_hview);
 view_set_camera(0,camera)
