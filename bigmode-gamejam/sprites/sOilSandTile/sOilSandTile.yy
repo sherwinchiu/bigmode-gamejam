@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sOilSandTile",
   "bboxMode":0,
-  "bbox_bottom":59,
+  "bbox_bottom":119,
   "bbox_left":0,
-  "bbox_right":59,
+  "bbox_right":119,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":60,
+  "height":120,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a0d445f3-21e2-4bda-a747-75cc28ff36af","blendMode":0,"displayName":"default","isLocked":false,"name":"a0d445f3-21e2-4bda-a747-75cc28ff36af","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":60,
+  "width":120,
 }

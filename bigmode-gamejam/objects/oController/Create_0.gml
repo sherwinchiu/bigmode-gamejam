@@ -63,7 +63,7 @@ week_num = 1;
 var lay_id = layer_get_id("Week_Display");
 layer_set_visible(lay_id, false); 
 
-// alarm_set(0, game_get_speed(gamespeed_fps) * 5);
+alarm_set(0, game_get_speed(gamespeed_fps) * 5);
 // alarm_set(0, game_get_speed(gamespeed_fps) * 120);  // new week every 2 minutes
 
 
