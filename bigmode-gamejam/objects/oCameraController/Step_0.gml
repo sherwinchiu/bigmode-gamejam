@@ -25,13 +25,11 @@ if (global.week_end && !global.leveled_up) {
 		show_debug_message("hellO");
 	
 		global.leveled_up = true;
-		/*
-			var _vx = camera_get_view_x(view_camera[0]);
-			var _vy = camera_get_view_y(view_camera[0]);
-			var _vw = camera_get_view_width(view_camera[0]);
-			var _vh = camera_get_view_height(view_camera[0]);
-			instance_activate_region(_vx, _vy, _vw, _vh, false);
-		*/
+		var _vx = camera_get_view_x(view_camera[0]);
+		var _vy = camera_get_view_y(view_camera[0]);
+		var _vw = camera_get_view_width(view_camera[0]);
+		var _vh = camera_get_view_height(view_camera[0]);
+		instance_activate_region(_vx, _vy, _vw, _vh, true);
 	}
 }
 
@@ -47,18 +45,19 @@ if (mouse_check_button(mb_middle)) {
 }
 
 //show_debug_message("before clamp ONE: " + string(global.view_xview) + ", " + string(global.view_yview) +" --- " + string(min_x_cam) + ", " + string(min_y_cam) + " to " + string(max_x_cam) + ", " + string(max_y_cam));
+if (!keyboard_check(vk_space)) { // IF STATEMENT FOR TESTING
+	global.view_xview = clamp(global.view_xview, min_x_cam, max_x_cam);
+	global.view_yview = clamp(global.view_yview, min_y_cam, max_y_cam);
+}
 
-global.view_xview = clamp(global.view_xview, min_x_cam, max_x_cam);
-global.view_yview = clamp(global.view_yview, min_y_cam, max_y_cam);
 
 
-/*
-FIX ZOOM LATER
+// FIX ZOOM LATER
 
 var prev_view_w = view_wview;
 var prev_view_h = view_hview;
 
-if (mouse_wheel_up()) {
+if (mouse_wheel_up() && keyboard_check(vk_space)) {
     view_wview -= window_max_w / zoom_speed;
     view_hview -= window_max_h / zoom_speed;
 	view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
@@ -67,7 +66,7 @@ if (mouse_wheel_up()) {
     global.view_yview += (prev_view_h - view_hview) / 2;
 }
 
-if (mouse_wheel_down()) {
+if (mouse_wheel_down() && keyboard_check(vk_space)) {
     view_wview += window_max_w / zoom_speed;
     view_hview += window_max_h / zoom_speed;
 	view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
@@ -76,9 +75,10 @@ if (mouse_wheel_down()) {
     global.view_yview -= (view_hview - prev_view_h) / 2;
 }
 
-global.view_xview = clamp(global.view_xview, min_x_cam, max_x_cam);
-global.view_yview = clamp(global.view_yview, min_y_cam, max_y_cam);
-*/
+if (!keyboard_check(vk_space)) { // IF STATEMENT FOR TESTING
+	global.view_xview = clamp(global.view_xview, min_x_cam, max_x_cam);
+	global.view_yview = clamp(global.view_yview, min_y_cam, max_y_cam);
+}
 
 camera_set_view_pos(camera, global.view_xview, global.view_yview);
 camera_set_view_size(camera, view_wview, view_hview);
