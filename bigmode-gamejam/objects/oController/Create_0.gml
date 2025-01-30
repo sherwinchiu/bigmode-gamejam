@@ -26,7 +26,7 @@ global.allConsumers = [];
 
 //-------------------- PRODUCER TRACKING -----------------------------
 // track producers & it's tiles
-tile_order = [oCoalTile, oGrassTile, oOilSandTile, oTreeTile, oWaterTile];
+global.tile_order = [oCoalTile, oGrassTile, oOilSandTile, oTreeTile, oWaterTile];
 // track respective producer to each tile
 global.producer_order = [oCoalProducer, oOilSandProducer, oTreeProducer, oWaterProducer, oTransmission]; // ***** TRANSMISSION TOWER TEMPORARY FOR TESTING*****
 global.COAL_ID = 0;
@@ -53,7 +53,7 @@ global.consumer_demand = [1, 5, 5, 10, 7, 4, 3];
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
 random_consumer_spawn = random_range(5, 15);
-alarm_set(1, game_get_speed(gamespeed_fps) * random_consumer_spawn);
+alarm_set(1, game_get_speed(gamespeed_fps) * 2);
 
 
 //-------------------- DISPLAY WEEK END ------------------------------
@@ -63,7 +63,7 @@ week_num = 1;
 var lay_id = layer_get_id("Week_Display");
 layer_set_visible(lay_id, false); 
 
-alarm_set(0, game_get_speed(gamespeed_fps) * 5);
+// alarm_set(0, game_get_speed(gamespeed_fps) * 5);
 // alarm_set(0, game_get_speed(gamespeed_fps) * 120);  // new week every 2 minutes
 
 
