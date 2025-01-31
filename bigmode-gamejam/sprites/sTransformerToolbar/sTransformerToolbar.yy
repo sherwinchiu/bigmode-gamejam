@@ -2,9 +2,15 @@
   "$GMSprite":"",
   "%Name":"sTransformerToolbar",
   "bboxMode":0,
+<<<<<<< Updated upstream
   "bbox_bottom":84,
   "bbox_left":0,
   "bbox_right":119,
+=======
+  "bbox_bottom":339,
+  "bbox_left":0,
+  "bbox_right":479,
+>>>>>>> Stashed changes
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,6 +18,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
+<<<<<<< Updated upstream
     {"$GMSpriteFrame":"","%Name":"41028788-abe5-4204-856a-5b0231145ce2","name":"41028788-abe5-4204-856a-5b0231145ce2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -20,6 +27,16 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"0b9f6261-d189-4be6-90bf-4e911c265071","blendMode":0,"displayName":"default","isLocked":false,"name":"0b9f6261-d189-4be6-90bf-4e911c265071","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+=======
+    {"$GMSpriteFrame":"","%Name":"b86617df-9b65-4b23-9cf3-dc763094eba5","name":"b86617df-9b65-4b23-9cf3-dc763094eba5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+  ],
+  "gridX":0,
+  "gridY":0,
+  "height":340,
+  "HTile":false,
+  "layers":[
+    {"$GMImageLayer":"","%Name":"5e506a41-9f77-4994-8278-ec4e79a76cd4","blendMode":0,"displayName":"default","isLocked":false,"name":"5e506a41-9f77-4994-8278-ec4e79a76cd4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+>>>>>>> Stashed changes
   ],
   "name":"sTransformerToolbar",
   "nineSlice":null,
@@ -69,8 +86,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+<<<<<<< Updated upstream
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"41028788-abe5-4204-856a-5b0231145ce2","path":"sprites/sTransformerToolbar/sTransformerToolbar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"051630d9-ddb8-4d9f-a431-dd00c31b03e2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+=======
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b86617df-9b65-4b23-9cf3-dc763094eba5","path":"sprites/sTransformerToolbar/sTransformerToolbar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e2b25ab5-b613-490e-b45e-11ba2d02c599","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+>>>>>>> Stashed changes
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +108,9 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< Updated upstream
   "width":120,
+=======
+  "width":480,
+>>>>>>> Stashed changes
 }
