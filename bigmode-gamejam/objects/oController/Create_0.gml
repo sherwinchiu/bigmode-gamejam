@@ -42,7 +42,7 @@ global.TRANMISSIONTOWERID = 4; // *****TEMPORARY FOR TESTING*****
 
 // track producer points
 global.producer_energy = [2, 10, 2, 3];
-global.producer_inv = [3, 2, 5, 2, 100];
+global.producer_inv = [3, 2, 5, 2, 99];
 buttons = [oCoalToolbarButton, oOilSandToolbarButton, oTreeToolbarButton, oWaterToolbarButton, oTransmissionButton];
 len = array_length(buttons);
 //-------------------- CONSUMER TRACKING ------------------------------
