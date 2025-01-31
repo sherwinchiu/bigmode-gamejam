@@ -5,17 +5,17 @@ if (global.week_end && !global.leveled_up) {
 	
 		var old_w = view_wview;
 		var old_h = view_hview;
-		view_wview = min(max_zoom_width, view_wview + zoom_factor);
-		view_hview = min(max_zoom_height, view_hview + zoom_factor);
+		//view_wview = min(max_zoom_width, view_wview + zoom_factor);
+		//view_hview = min(max_zoom_height, view_hview + zoom_factor);
 	
 		global.view_xview -= (view_wview - old_w) / 2;
 		global.view_yview -= (view_hview - old_h) / 2;
 	
 		// expand pan range
-		min_x_cam -= 120;
-		min_y_cam -= 120;
-		//max_x_cam += 120;
-		//max_y_cam += 120;
+		min_x_cam -= 60;
+		min_y_cam -= 60;
+		max_x_cam += 60;
+		max_y_cam += 60;
 		
 		// expand zoom range
 		min_zoom_width = view_wview;

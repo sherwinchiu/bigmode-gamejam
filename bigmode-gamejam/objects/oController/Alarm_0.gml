@@ -22,4 +22,4 @@ wire_length_available += 40;
 
 alarm_set(1, spawn_time);
 global.paused = false;
-alarm_set(0, game_get_speed(gamespeed_fps) * 5);  // reset alarm on call
+alarm_set(0, game_get_speed(gamespeed_fps) * 15);  // reset alarm on call

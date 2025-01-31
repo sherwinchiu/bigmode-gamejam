@@ -1,0 +1,1 @@
+if (!is_ghost) is_selected = false;

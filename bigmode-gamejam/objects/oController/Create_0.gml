@@ -15,8 +15,8 @@ wire_length_available = 0; // total wire length for player to use
 
 global.paused = false;
 
-//global.ghost_building = noone;
-//show_debug_message("HELLOOO " + string(global.ghost_building));
+global.ghost_building_id = -1;
+global.ghost_building = noone;
 
 window_set_size(1920, 1080);
 

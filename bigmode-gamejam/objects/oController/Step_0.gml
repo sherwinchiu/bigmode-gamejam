@@ -44,19 +44,19 @@ if (global.paused) { // if game is paused
 	//	}
 	//}
 	
-	//show_debug_message(string(global.ghost_building) + ", " + string(global.curr_building));
+	show_debug_message(string(global.ghost_building_id) + ", " + string(global.curr_building));
 	
-	//if (global.ghost_building == noone && global.curr_building != -1) {
-	//	show_debug_message("here");
-	//	global.ghost_building = instance_create_layer(mouse_x, mouse_y, "Instances", global.producer_order[global.curr_building]);
-	//} else if(global.ghost_building != noone) {
-	//	show_debug_message("GHOST BUILDING IS " + str(global.ghost_building));
-	//	if (global.ghost_building.producer_type != global.curr_building) {
-	//		global.ghost_building = instance_create_layer(mouse_x, mouse_y, "Instances", global.producer_order[global.curr_building]);
-	//	}
-	//} else if (global.ghost_building != noone && global.curr_building == -1) {
-	//	show_debug_message("hi");
+	//if (global.ghost_building_id != global.curr_building) {
 	//	instance_deactivate_object(global.ghost_building);
+	//	show_debug_message("delete");
 	//	global.ghost_building = noone;
+	//	if (global.curr_building == -1) {
+	//		global.ghost_building_id = -1;
+	//	} else {
+	//		global.ghost_building_id = global.curr_building;
+	//		show_debug_message("create: " + string(global.ghost_building_id));
+	//		global.ghost_building = instance_create_layer(mouse_x, mouse_y, "Instances", global.producer_order[global.ghost_building_id]);
+	//		global.ghost_building.is_ghost = true;
+	//	}
 	//}
 }

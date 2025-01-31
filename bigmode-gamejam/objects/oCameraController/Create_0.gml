@@ -2,7 +2,7 @@ view_wview = 1920;
 view_hview = 1080;
 global.view_xview = (room_width / 2) - (view_wview / 2);
 global.view_yview = (room_height / 2) - (view_hview / 2) - 60;
-show_debug_message(string(global.view_xview) + " " + string(global.view_yview));
+show_debug_message(string(global.view_xview) + " X, Y->" + string(global.view_yview));
 
 instance_deactivate_all(true);
 instance_activate_layer("GUI");
