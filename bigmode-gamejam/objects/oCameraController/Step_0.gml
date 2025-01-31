@@ -22,7 +22,6 @@ if (global.week_end && !global.leveled_up) {
 		max_zoom_width = view_wview + (max_x_cam - min_x_cam);
 		min_zoom_height = view_hview;
 		max_zoom_height = view_hview +(max_y_cam - min_y_cam);
-		show_debug_message("hellO");
 	
 		global.leveled_up = true;
 		var _vx = camera_get_view_x(view_camera[0]);

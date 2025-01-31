@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sToolbarButton",
-    "path":"sprites/sToolbarButton/sToolbarButton.yy",
+    "name":"sWaterToolbar",
+    "path":"sprites/sWaterToolbar/sWaterToolbar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

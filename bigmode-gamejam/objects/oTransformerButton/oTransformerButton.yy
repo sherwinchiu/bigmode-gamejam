@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oOilSandToolbarButton",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oTransformerButton",
+  "eventList":[],
   "managed":true,
-  "name":"oOilSandToolbarButton",
+  "name":"oTransformerButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Toolbar",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sOilToolbar",
-    "path":"sprites/sOilToolbar/sOilToolbar.yy",
+    "name":"sTransformerToolbar",
+    "path":"sprites/sTransformerToolbar/sTransformerToolbar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

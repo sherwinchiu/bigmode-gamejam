@@ -9,12 +9,6 @@ instance_activate_layer("GUI");
 instance_activate_object(oController);
 instance_activate_region(global.view_xview, global.view_yview, view_wview, view_hview, true);
 
-buttons = [oCoalToolbarButton, oGrassToolbarButton, oOilSandToolbarButton, oToolbarButtonParent, oTreeToolbarButton, oWaterToolbarButton];
-
-for (var i = 0; i < array_length(buttons); i++) {
-	instance_activate_object(buttons[i]);	
-}
-
 camera = camera_create_view(global.view_xview, global.view_yview, view_wview, view_hview);
 view_set_camera(0,camera)
 view_visible[0] = true;

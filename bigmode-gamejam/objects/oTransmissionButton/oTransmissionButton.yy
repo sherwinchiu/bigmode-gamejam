@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oGrassToolbarButton",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oTransmissionButton",
+  "eventList":[],
   "managed":true,
-  "name":"oGrassToolbarButton",
+  "name":"oTransmissionButton",
   "overriddenProperties":[],
   "parent":{
     "name":"Toolbar",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sToolbarButton",
-    "path":"sprites/sToolbarButton/sToolbarButton.yy",
+    "name":"sTransmissionToolbar",
+    "path":"sprites/sTransmissionToolbar/sTransmissionToolbar.yy",
   },
   "spriteMaskId":null,
   "visible":true,
