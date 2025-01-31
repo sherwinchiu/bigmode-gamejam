@@ -60,8 +60,8 @@ var prev_view_h = view_hview;
 if (mouse_wheel_up() && keyboard_check(vk_space)) {
     view_wview -= window_max_w / zoom_speed;
     view_hview -= window_max_h / zoom_speed;
-	view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
-    view_hview = clamp(view_hview, min_zoom_height, max_zoom_height);
+	//view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
+    //view_hview = clamp(view_hview, min_zoom_height, max_zoom_height);
     global.view_xview += (prev_view_w - view_wview) / 2;
     global.view_yview += (prev_view_h - view_hview) / 2;
 }
@@ -69,8 +69,8 @@ if (mouse_wheel_up() && keyboard_check(vk_space)) {
 if (mouse_wheel_down() && keyboard_check(vk_space)) {
     view_wview += window_max_w / zoom_speed;
     view_hview += window_max_h / zoom_speed;
-	view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
-    view_hview = clamp(view_hview, min_zoom_height, max_zoom_height);
+	//view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
+    //view_hview = clamp(view_hview, min_zoom_height, max_zoom_height);
     global.view_xview -= (view_wview - prev_view_w) / 2;
     global.view_yview -= (view_hview - prev_view_h) / 2;
 }

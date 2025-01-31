@@ -8,7 +8,7 @@ var spawn_time = alarm_get(1);
 alarm_set(1, -1); // pause alarm
 
 
-global.paused = true;
+//global.paused = true;
 global.week_end = true;
 global.leveled_up = false;
 show_debug_message("week ended");
