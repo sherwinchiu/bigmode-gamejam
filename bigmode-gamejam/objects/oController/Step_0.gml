@@ -29,4 +29,4 @@ if (global.paused) { // if game is paused
 	checkPower();
 }
 
-var ghost_building = instance_create_layer(mouse_x, mouse_y, "Instances", global.producer_order[global.curr_building]);
+//var ghost_building = instance_create_layer(mouse_x, mouse_y, "Instances", global.producer_order[global.curr_building]);
