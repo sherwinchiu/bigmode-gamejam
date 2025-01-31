@@ -12,7 +12,7 @@ instance_activate_region(global.view_xview, global.view_yview, view_wview, view_
 camera = camera_create_view(global.view_xview, global.view_yview, view_wview, view_hview);
 view_set_camera(0,camera)
 view_visible[0] = true;
-zoom_speed = 60;
+zoom_speed = 3;
 cam_x = camera_get_view_x(camera);
 cam_y = camera_get_view_y(camera);
 show_debug_message("Actual Camera Position: " + string(cam_x) + ", " + string(cam_y));

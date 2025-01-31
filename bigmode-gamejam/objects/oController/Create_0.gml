@@ -15,12 +15,16 @@ wire_length_available = 0; // total wire length for player to use
 
 global.paused = false;
 
+//global.ghost_building = noone;
+//show_debug_message("HELLOOO " + string(global.ghost_building));
+
 window_set_size(1920, 1080);
 
 global.week_end = false;
+global.can_connect_wire = true;
 
 
-global.curr_building = 0; // building used for building on producers
+global.curr_building = -1; // building used for building on producers
 global.allProducers = []; // store all producers
 global.allConsumers = [];
 
