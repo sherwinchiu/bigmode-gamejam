@@ -6,8 +6,7 @@ if (global.paused) { // if game is paused
 			// find what circle you drop it on
 	        var dest_circle = instance_position(mouse_x, mouse_y, oWireDraggable);
 
-	        if (dest_circle != noone && dest_circle != selected_circle) {	
-				
+	        if (dest_circle != noone && dest_circle != selected_circle && global.can_connect_wire) {	
 				connectWires(selected_circle, dest_circle);
 				
 	            // reset states
@@ -18,6 +17,7 @@ if (global.paused) { // if game is paused
 	            selected_circle.is_selected = false;
 	            selected_circle = noone;
 	            dragging_wire = false;
+				global.can_connect_wire = true;
 	        }
 	    }
 	    if (mouse_check_button(mb_left)) {
