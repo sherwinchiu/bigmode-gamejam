@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sOilToolbar",
   "bboxMode":0,
-  "bbox_bottom":82,
+  "bbox_bottom":89,
   "bbox_left":0,
   "bbox_right":119,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"df304cf3-a4fd-443a-9a03-32df72b2d656","name":"df304cf3-a4fd-443a-9a03-32df72b2d656","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"bc44a3b7-c0da-439e-8743-3158b8a99bb4","name":"bc44a3b7-c0da-439e-8743-3158b8a99bb4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":83,
+  "height":90,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"16f40bf1-bde1-4732-96b4-94fb18492521","blendMode":0,"displayName":"default","isLocked":false,"name":"16f40bf1-bde1-4732-96b4-94fb18492521","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"206040f0-3e98-47a7-aaea-18d6b648df30","blendMode":0,"displayName":"default","isLocked":false,"name":"206040f0-3e98-47a7-aaea-18d6b648df30","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sOilToolbar",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df304cf3-a4fd-443a-9a03-32df72b2d656","path":"sprites/sOilToolbar/sOilToolbar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a43428e2-60aa-4f32-8733-33d6134c4367","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc44a3b7-c0da-439e-8743-3158b8a99bb4","path":"sprites/sOilToolbar/sOilToolbar.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c34520ff-9cfd-4167-9f52-6eaa2e80d139","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
