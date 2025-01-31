@@ -30,7 +30,22 @@ function connectWires(c1, c2) {
 	}
 	
 	if (c1.building_type == transmissionID && c2.building_type == transmissionID) {
-		// for later -- should be share connected consumers/producers and update stuff
+		// this is unoptimized :(
+		var p_union = array_unique(array_concat(c1.connected_producers, c2.connected_producers));
+
+		c1.connected_producers = p_union;
+		c2.connected_producers = p_union;
+		
+		var c_union = array_unique(array_concat(c1.connected_consumers, c2.connected_consumers));
+		c1.connected_consumers = c_union;
+		c2.connected_consumers = c_union;
+		
+		var prod_len = array_length(p_union);
+		for (var i = 0; i < prod_len; i++) {
+			var temp = array_unique(array_concat(p_union[i].connected_consumers, c_union));	
+			p_union[i].connected_consumers = temp;
+		}
+		
 		connected = true;
 	}
 	if (connected) {

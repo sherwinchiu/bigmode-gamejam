@@ -44,7 +44,7 @@ if (global.paused) { // if game is paused
 	//	}
 	//}
 	
-	show_debug_message(string(global.ghost_building_id) + ", " + string(global.curr_building));
+	//show_debug_message(string(global.ghost_building_id) + ", " + string(global.curr_building));
 	
 	//if (global.ghost_building_id != global.curr_building) {
 	//	instance_deactivate_object(global.ghost_building);
