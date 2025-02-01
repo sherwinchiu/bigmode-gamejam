@@ -3,6 +3,8 @@
 selected_circle = noone;
 dragging_wire = false;
 
+global.controller = self; 
+
 // reset viewport and camera
 global.res_width = 1920;
 global.res_height = 1080;

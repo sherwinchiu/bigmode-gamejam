@@ -29,6 +29,6 @@ function drawConsumerBuilding(obj, sprite){
 	var drawnConsumer = instance_create_layer(random_grass_tile.x + random_grass_tile.sprite_width, random_grass_tile.y + random_grass_tile.sprite_height, "Instances", oHouse);
 	drawnConsumer.image_xscale = 0.5;
 	drawnConsumer.image_yscale = 0.5;
-	
+	audio_play_sound(sdThunk, 1, false);
 	array_push(global.allConsumers, drawnConsumer);
 }
