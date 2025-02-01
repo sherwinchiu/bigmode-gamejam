@@ -3,7 +3,6 @@
   "%Name":"oContinueButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oContinueButton",
@@ -13,8 +12,8 @@
     "path":"folders/Objects/Week Display.yy",
   },
   "parentObjectId":{
-    "name":"oToolbarButtonParent",
-    "path":"objects/oToolbarButtonParent/oToolbarButtonParent.yy",
+    "name":"oWeekButtonsParent",
+    "path":"objects/oWeekButtonsParent/oWeekButtonsParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCircle",
-    "path":"sprites/sCircle/sCircle.yy",
+    "name":"sCoalToolbar",
+    "path":"sprites/sCoalToolbar/sCoalToolbar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

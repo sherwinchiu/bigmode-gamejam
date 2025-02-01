@@ -83,6 +83,7 @@
     {"id":{"name":"connectWires","path":"scripts/connectWires/connectWires.yy",},},
     {"id":{"name":"drawConsumerBuilding","path":"scripts/drawConsumerBuilding/drawConsumerBuilding.yy",},},
     {"id":{"name":"drawWire","path":"scripts/drawWire/drawWire.yy",},},
+    {"id":{"name":"pausingScripts","path":"scripts/pausingScripts/pausingScripts.yy",},},
     {"id":{"name":"placeBuilding","path":"scripts/placeBuilding/placeBuilding.yy",},},
     {"id":{"name":"seqHouse","path":"sequences/seqHouse/seqHouse.yy",},},
     {"id":{"name":"sAirport","path":"sprites/sAirport/sAirport.yy",},},

@@ -1,35 +1,33 @@
-if (global.paused) { // if game is paused
-	
-} else {
-	if (selected_circle != noone) {
-	    if (mouse_check_button_released(mb_left)) {
-			// find what circle you drop it on
-	        var dest_circle = instance_position(mouse_x, mouse_y, oWireDraggable);
 
-	        if (dest_circle != noone && dest_circle != selected_circle && global.can_connect_wire) {	
-				connectWires(selected_circle, dest_circle);
+if (selected_circle != noone) {
+	if (mouse_check_button_released(mb_left)) {
+		// find what circle you drop it on
+	    var dest_circle = instance_position(mouse_x, mouse_y, oWireDraggable);
+
+	    if (dest_circle != noone && dest_circle != selected_circle && global.can_connect_wire) {	
+			connectWires(selected_circle, dest_circle);
 				
-	            // reset states
-	            selected_circle.is_selected = false;
-	            selected_circle = noone;
-	            dragging_wire = false;
-	        } else {
-	            selected_circle.is_selected = false;
-	            selected_circle = noone;
-	            dragging_wire = false;
-				global.can_connect_wire = true;
-				//instance_destroy(oWire, true);
-	        }
-	    }
-	    if (mouse_check_button(mb_left)) {
-	        dragging_wire = true;
+	        // reset states
+	        selected_circle.is_selected = false;
+	        selected_circle = noone;
+	        dragging_wire = false;
+	    } else {
+	        selected_circle.is_selected = false;
+	        selected_circle = noone;
+	        dragging_wire = false;
+			global.can_connect_wire = true;
+			//instance_destroy(oWire, true);
 	    }
 	}
-	//if (instance_position(mouse_x, mouse_y, oWire)) {
-	//	show_debug_message("hello");
-	//}
-	// electricity calculations
-	checkPower();
+	if (mouse_check_button(mb_left)) {
+	    dragging_wire = true;
+	}
+}
+//if (instance_position(mouse_x, mouse_y, oWire)) {
+//	show_debug_message("hello");
+//}
+// electricity calculations
+checkPower();
 
 	// display demand for consumers
 	//var num_c = array_length(global.allConsumers);
@@ -62,4 +60,4 @@ if (global.paused) { // if game is paused
 	//		global.ghost_building.is_ghost = true;
 	//	}
 	//}
-}
+

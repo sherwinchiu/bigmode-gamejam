@@ -16,8 +16,6 @@
     {"name":"inst_7D0EDCCB","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_1A2B8A75","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_8B6E3F4","path":"rooms/Gameplay/Gameplay.yy",},
-    {"name":"inst_27156EC1","path":"rooms/Gameplay/Gameplay.yy",},
-    {"name":"inst_36B27DD0","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_5D187E2A","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_17B7A840","path":"rooms/Gameplay/Gameplay.yy",},
     {"name":"inst_4D5681F8","path":"rooms/Gameplay/Gameplay.yy",},
@@ -2339,10 +2337,7 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Week_Display","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_27156EC1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27156EC1","objectId":{"name":"oWeekPauseBackground","path":"objects/oWeekPauseBackground/oWeekPauseBackground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.71666664,"scaleY":0.73333335,"x":0.0,"y":0.0,},
-        {"$GMRInstance":"v1","%Name":"inst_36B27DD0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_36B27DD0","objectId":{"name":"oWeekTitleDisplay","path":"objects/oWeekTitleDisplay/oWeekTitleDisplay.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":192.0,},
-      ],"layers":[],"name":"Week_Display","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
+    {"$GMRInstanceLayer":"","%Name":"Week_Display","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Week_Display","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"GUI","depth":100,"effectEnabled":true,"effectType":"none","gridX":60,"gridY":60,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_59367A70","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59367A70","objectId":{"name":"oWaterToolbarButton","path":"objects/oWaterToolbarButton/oWaterToolbarButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":30.0,"y":450.0,},
         {"$GMRInstance":"v1","%Name":"inst_4D5681F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D5681F8","objectId":{"name":"oTreeToolbarButton","path":"objects/oTreeToolbarButton/oTreeToolbarButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":165.0,"y":450.0,},
