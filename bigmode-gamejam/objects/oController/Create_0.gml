@@ -44,6 +44,8 @@ global.TRANMISSIONTOWERID = 4; // *****TEMPORARY FOR TESTING*****
 // track producer points
 global.producer_energy = [2, 10, 2, 3];
 global.producer_inv = [3, 2, 5, 2, 99];
+global.curProvided = 0;
+
 buttons = [oCoalToolbarButton, oOilSandToolbarButton, oTreeToolbarButton, oWaterToolbarButton, oTransmissionButton];
 len = array_length(buttons);
 //-------------------- CONSUMER TRACKING ------------------------------
@@ -56,6 +58,7 @@ global.FACTORY_ID = 3;
 global.COMMUNITY_ID = 4;
 global.EMERGENCY_ID = 5;
 global.AIRPORT_ID = 6;
+global.totalDemand = 0;
 
 global.consumer_demand = [1, 5, 5, 10, 7, 4, 3];
 
