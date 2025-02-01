@@ -25,6 +25,7 @@ global.can_connect_wire = true;
 
 
 global.curr_building = -1; // building used for building on producers
+global.allWires = []; // stores all the wire 
 global.allProducers = []; // store all producers
 global.allConsumers = [];
 

@@ -1,4 +1,5 @@
 function drawWire(path, x1, y1, x2, y2, genPath){	
+	instance_destroy(oWire, true);
 	if (genPath) {
 		draw_set_colour(c_white);	
 		show_debug_message("drawing");
@@ -24,7 +25,9 @@ function drawWire(path, x1, y1, x2, y2, genPath){
 	}
 	
 	// draw circles along path	
-	for(var i = 0; i <= 1; i+= 0.001) {
+	for(var i = 0; i <= 1; i+= 0.005) {
 		draw_circle(path_get_x(path, i), path_get_y(path, i), 3, false);
+		//instance_create_layer(path_get_x(path, i), path_get_y(path, i), "Instances", oWire);
 	}
+	
 }
