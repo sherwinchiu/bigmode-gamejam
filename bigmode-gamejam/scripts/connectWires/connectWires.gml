@@ -7,7 +7,7 @@ function connectWires(c1, c2) {
 	
 	if (c1.building_type > c2.building_type) return connectWires(c2, c1);
 	
-	if (c1.building_type == producerID && c2.building_type == transmissionID) {
+	if (c1.building_type == producerID && c2.building_type == transmissionID && !array_contains(c2.direct_connections, c1)) {
 		// add all consumers connected to transmission tower to the producer
 		var n = array_length(c2.connected_consumers);
 		if (n > 0) {
@@ -16,9 +16,10 @@ function connectWires(c1, c2) {
 			}
 		}
 		array_push(c2.connected_producers, c1);
+		array_push(c2.direct_connections, c1);
 		connected = true;
 	}
-	if (c1.building_type == consumerID && c2.building_type = transmissionID) {
+	if (c1.building_type == consumerID && c2.building_type = transmissionID && !array_contains(c2.direct_connections, c1)) {
 		// add consumer to transmission tower's array + add consumer to all producers connected to tranmission tower
 		array_push(c2.connected_consumers, c1);
 		var n = array_length(c2.connected_producers);
@@ -26,10 +27,11 @@ function connectWires(c1, c2) {
 		for (var i = 0; i < n; i++) {
 			array_push(c2.connected_producers[i].connected_consumers, c1);
 		}
+		array_push(c2.direct_connections, c1);
 		connected = true;
 	}
 	
-	if (c1.building_type == transmissionID && c2.building_type == transmissionID) {
+	if (c1.building_type == transmissionID && c2.building_type == transmissionID && !array_contains(c2.direct_connections, c1)) {
 		// this is unoptimized :(
 		var p_union = array_unique(array_concat(c1.connected_producers, c2.connected_producers));
 
@@ -47,6 +49,8 @@ function connectWires(c1, c2) {
 		}
 		
 		connected = true;
+		array_push(c1.direct_connections, c2);
+		array_push(c2.direct_connections, c1);
 	}
 	if (connected) {
 		var newWire = instance_create_layer(0, 0, "Instances", oLine);

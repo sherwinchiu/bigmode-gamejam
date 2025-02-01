@@ -16,6 +16,7 @@ function placeBuilding(curr_tile, curr_x, curr_y){
 				array_push(global.allProducers, newBuilding);
 			}
 			global.producer_inv[global.curr_building]--;
+			global.curr_building = -1;
 		}
 		//global.energy_output += global.producer_energy[global.curr_building];
 	} else { // if not, invalid
