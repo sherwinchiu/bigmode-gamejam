@@ -7,16 +7,21 @@ function placeBuilding(curr_tile, curr_x, curr_y){
 		
 		if (global.producer_inv[global.curr_building] > 0) {
 		// TODO: change oProducerParent to an object in global.producer_order
-			var newBuilding = instance_create_layer((global.curr_building == global.TRANMISSIONTOWERID) ? curr_x + 60 : curr_x, curr_y, "Instances", global.producer_order[global.curr_building]);
-			if (global.curr_building == global.COAL_ID || 
-				global.curr_building == global.OIL_ID ||
-				global.curr_building == global.WATER_ID ||
-				global.curr_building == global.TREE_ID) {
+			var inst = collision_rectangle(curr_x, curr_y, curr_x + 120, curr_y + 120, oConsumerParent, false, false);
+			if (inst == noone) {
+				var newBuilding = instance_create_layer(curr_x + 60,(global.curr_building == global.TRANMISSIONTOWERID) ? curr_y : curr_y + 60, "Instances", global.producer_order[global.curr_building]);
+				if (global.curr_building == global.COAL_ID || 
+					global.curr_building == global.OIL_ID ||
+					global.curr_building == global.WATER_ID ||
+					global.curr_building == global.TREE_ID) {
 			
-				array_push(global.allProducers, newBuilding);
+					array_push(global.allProducers, newBuilding);
+				}
+				global.producer_inv[global.curr_building]--;
+				global.curr_building = -1;
+			} else {
+				show_debug_message("collide");	
 			}
-			global.producer_inv[global.curr_building]--;
-			global.curr_building = -1;
 		}
 		//global.energy_output += global.producer_energy[global.curr_building];
 	} else { // if not, invalid

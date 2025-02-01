@@ -10,7 +10,7 @@ function drawWire(path, x1, y1, x2, y2, genPath){
 		var mid_y = y1;
 		if (dist > 5) {
 			// change 100 below to edit curve (also edt this comment :))
-			mid_y = ((y1 + y2)/2 + 100/log10(dist + 10));
+			mid_y = ((y1 + y2)/2 + 75/log10(dist + 10));
 		}
 		// check for max distance, set it to red since it's too far
 		var num_tiles = 4.1;
