@@ -14,4 +14,4 @@ depth = 0;
 
 show_debug_message(string(global.curProvided) + ", " + string(global.totalDemand));
 var percent = floor(min((global.curProvided / global.totalDemand) * 100, 100) / 20);
-draw_sprite(sBattery, 5 - percent, 100, 100);
+draw_sprite(sBattery, 5 - percent, 60, 60);
