@@ -18,13 +18,16 @@ if (global.paused) { // if game is paused
 	            selected_circle = noone;
 	            dragging_wire = false;
 				global.can_connect_wire = true;
+				//instance_destroy(oWire, true);
 	        }
 	    }
 	    if (mouse_check_button(mb_left)) {
 	        dragging_wire = true;
 	    }
 	}
-	
+	//if (instance_position(mouse_x, mouse_y, oWire)) {
+	//	show_debug_message("hello");
+	//}
 	// electricity calculations
 	checkPower();
 
