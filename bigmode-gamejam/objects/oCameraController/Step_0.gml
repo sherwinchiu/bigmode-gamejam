@@ -1,6 +1,6 @@
 if (global.week_end && !global.leveled_up) {
 	if (cur_level < max_level) {
-		show_debug_message(cur_level);
+		//show_debug_message(cur_level);
 		cur_level++;
 	
 		var old_w = view_wview;

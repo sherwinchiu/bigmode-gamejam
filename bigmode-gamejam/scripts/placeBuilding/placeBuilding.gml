@@ -7,7 +7,7 @@ function placeBuilding(curr_tile, curr_x, curr_y){
 		
 		if (global.producer_inv[global.curr_building] > 0) {
 		// TODO: change oProducerParent to an object in global.producer_order
-			var newBuilding = instance_create_layer(curr_x, curr_y, "Instances", global.producer_order[global.curr_building]);
+			var newBuilding = instance_create_layer((global.curr_building == global.TRANMISSIONTOWERID) ? curr_x + 60 : curr_x, curr_y, "Instances", global.producer_order[global.curr_building]);
 			if (global.curr_building == global.COAL_ID || 
 				global.curr_building == global.OIL_ID ||
 				global.curr_building == global.WATER_ID ||

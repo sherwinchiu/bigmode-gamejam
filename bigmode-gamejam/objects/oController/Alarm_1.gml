@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // choose a consumer object randomly 
-
+show_debug_message("RUN");
 drawConsumerBuilding(oHouse, sHouse);
 
 

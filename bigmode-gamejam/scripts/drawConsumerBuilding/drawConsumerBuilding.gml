@@ -5,10 +5,12 @@ function drawConsumerBuilding(obj, sprite){
 	var inst;
 	var random_grass_tile;
 	while (other_inst_found) {
-		random_grass_tile = instance_find(oGrassTile, random_range(0, instance_number(oGrassTile))); 
+		show_debug_message("grass tiles: " + string(instance_number(oGrassTile)));
+		random_grass_tile = instance_find(oGrassTile, irandom_range(0, instance_number(oGrassTile) -1 )); 
 		other_inst_found = false;
 		// check no other tiles are hindering the building
 		for (var i = 0; i < array_length(global.tile_order); i++) {
+			show_debug_message(random_grass_tile == noone);
 			inst = collision_rectangle(random_grass_tile.x, random_grass_tile.y, random_grass_tile.x + sprite_get_width(sprite)/2, random_grass_tile.y + sprite_get_height(sprite)/2, global.tile_order[i], false, false);
 			if inst != noone && i != 1 {
 				other_inst_found = true;
