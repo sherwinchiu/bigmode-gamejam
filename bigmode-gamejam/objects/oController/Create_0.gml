@@ -52,7 +52,9 @@ buttons = [oCoalToolbarButton, oOilSandToolbarButton, oTreeToolbarButton, oWater
 len = array_length(buttons);
 //-------------------- CONSUMER TRACKING ------------------------------
 //global.consumer_order = [oHouse, oApartment, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
-global.consumer_order = [oHouse];
+global.consumer_order = [oHouse, oApartment, oFactory, oAirport];
+consumer_sprites = [sHouse, sApartment, sFactory, sAirport];
+consumer_probability = [60, 80, 90, 100];
 global.HOUSE_ID = 0;
 global.APARTMENT_ID = 1;
 global.BUSINESS_ID = 2;
@@ -62,7 +64,7 @@ global.EMERGENCY_ID = 5;
 global.AIRPORT_ID = 6;
 global.totalDemand = 0;
 
-global.consumer_demand = [1, 5, 5, 10, 7, 4, 3];
+global.consumer_demand = [1, 4, 6, 7];
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
 random_consumer_spawn = random_range(5, 15);

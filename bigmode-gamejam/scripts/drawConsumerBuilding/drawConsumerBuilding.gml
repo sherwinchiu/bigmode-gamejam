@@ -7,21 +7,16 @@ function drawConsumerBuilding(obj, sprite){
 	while (other_inst_found) {
 		random_grass_tile = instance_find(oGrassTile, irandom_range(0, instance_number(oGrassTile) -1 ));
 		// check if outside the drawing will be outside the bounding box
-		
-		
 		if (random_grass_tile == noone) {
 			break;	
 		}
 		other_inst_found = false;
 		// tile is top, bottom or right of active arrow
-		show_debug_message("sprite hite: " + string(random_grass_tile.y + random_grass_tile.sprite_height));
-		show_debug_message(string(global.max_zoom_height));
-		if (random_grass_tile.y <= global.min_y_cam || random_grass_tile.y + random_grass_tile.sprite_height >= global.min_y_cam + global.max_zoom_height || random_grass_tile.x + random_grass_tile.sprite_width >= global.min_x_cam +global.max_zoom_width) {
+		if (random_grass_tile.y <= global.min_y_cam || random_grass_tile.y + sprite_get_height(sprite)/2 >= global.min_y_cam + global.max_zoom_height || random_grass_tile.x + sprite_get_width(sprite)/2 >= global.min_x_cam +global.max_zoom_width) {
 			other_inst_found = true;
 		}
 		// check no other tiles are hindering the building
 		for (var i = 0; i < array_length(global.tile_order); i++) {
-			show_debug_message(random_grass_tile == noone);
 			inst = collision_rectangle(random_grass_tile.x, random_grass_tile.y, random_grass_tile.x + sprite_get_width(sprite)/2, random_grass_tile.y + sprite_get_height(sprite)/2, global.tile_order[i], false, false);
 			if inst != noone && i != 1 {
 				other_inst_found = true;
@@ -44,7 +39,7 @@ function drawConsumerBuilding(obj, sprite){
 	}
 
 	// draw oHouse on random grass tile
-	var drawnConsumer = instance_create_layer(random_grass_tile.x + random_grass_tile.sprite_width, random_grass_tile.y + random_grass_tile.sprite_height, "Instances", oHouse);
+	var drawnConsumer = instance_create_layer(random_grass_tile.x + random_grass_tile.sprite_width, random_grass_tile.y + random_grass_tile.sprite_height, "Instances", obj);
 	drawnConsumer.image_xscale = 0.5;
 	drawnConsumer.image_yscale = 0.5;
 	audio_play_sound(sdThunk, 1, false);
