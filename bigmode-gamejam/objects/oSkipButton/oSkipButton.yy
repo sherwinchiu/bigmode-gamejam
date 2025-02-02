@@ -13,8 +13,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oMenuButtonParent","path":"objects/oMenuButtonParent/oMenuButtonParent.yy",},"propertyId":{"name":"button_text","path":"objects/oMenuButtonParent/oMenuButtonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Skip",},
   ],
   "parent":{
-    "name":"menu",
-    "path":"folders/Objects/menu.yy",
+    "name":"tutorial",
+    "path":"folders/Objects/tutorial.yy",
   },
   "parentObjectId":{
     "name":"oMenuButtonParent",
