@@ -5,8 +5,10 @@ function drawConsumerBuilding(obj, sprite){
 	var inst;
 	var random_grass_tile;
 	while (other_inst_found) {
-		show_debug_message("grass tiles: " + string(instance_number(oGrassTile)));
-		random_grass_tile = instance_find(oGrassTile, irandom_range(0, instance_number(oGrassTile) -1 )); 
+		random_grass_tile = instance_find(oGrassTile, irandom_range(0, instance_number(oGrassTile) -1 ));
+		if (random_grass_tile == noone) {
+			break;	
+		}
 		other_inst_found = false;
 		// check no other tiles are hindering the building
 		for (var i = 0; i < array_length(global.tile_order); i++) {
@@ -19,6 +21,13 @@ function drawConsumerBuilding(obj, sprite){
 		// check no other consumers are touching
 		for (var i = 0; i < array_length(global.consumer_order); i++) {
 			inst = collision_rectangle(random_grass_tile.x, random_grass_tile.y, random_grass_tile.x + sprite_get_width(sprite)/2, random_grass_tile.y + sprite_get_height(sprite)/2, global.consumer_order[i], false, false);
+			if inst != noone {
+				other_inst_found = true;
+			}
+		}
+		// check not hitting any producer's either, mainly just transmission tower
+		for (var i = 0; i < array_length(global.producer_order); i++) {
+			inst = collision_rectangle(random_grass_tile.x, random_grass_tile.y, random_grass_tile.x + sprite_get_width(sprite)/2, random_grass_tile.y + sprite_get_height(sprite)/2, global.producer_order[i], false, false);
 			if inst != noone {
 				other_inst_found = true;
 			}
