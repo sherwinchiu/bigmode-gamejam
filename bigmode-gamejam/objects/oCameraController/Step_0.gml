@@ -19,6 +19,8 @@ if (global.week_end && !global.leveled_up) {
 		global.paused = false;
 		instance_activate_object(inst_8B6E3F4);
 		instance_activate_layer("Instances");
+		instance_destroy(global.button1);
+		instance_destroy(global.button2);
 		instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 	}
 }

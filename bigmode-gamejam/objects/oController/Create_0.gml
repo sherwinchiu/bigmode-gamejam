@@ -46,8 +46,9 @@ global.OIL_ID = 3;
 global.TRANMISSIONTOWERID = 4; // *****TEMPORARY FOR TESTING*****
 
 // track producer points
-global.producer_energy = [3, 10, 1, 2];
-global.producer_inv = [0, 0, 0, 0, 99];
+global.producer_energy = [3, 1, 2, 10];
+global.producer_inv = [0, 0, 0, 0, 3];
+global.producers_to_add = [2, 6, 3, 1];
 global.curProvided = 0;
 
 global.buttons = [oCoalToolbarButton, oTreeToolbarButton, oWaterToolbarButton, oOilSandToolbarButton, oTransmissionButton];
@@ -56,17 +57,14 @@ len = array_length(global.buttons);
 //global.consumer_order = [oHouse, oApartment, oBusiness, oFactory, oCommunityCenter, oEmergency, oAirport];
 global.consumer_order = [oHouse, oApartment, oFactory, oAirport];
 consumer_sprites = [sHouse, sApartment, sFactory, sAirport];
-consumer_probability = [60, 80, 90, 100];
+consumer_probability = [70, 85, 95, 100];
 global.HOUSE_ID = 0;
 global.APARTMENT_ID = 1;
-global.BUSINESS_ID = 2;
-global.FACTORY_ID = 3;
-global.COMMUNITY_ID = 4;
-global.EMERGENCY_ID = 5;
-global.AIRPORT_ID = 6;
+global.FACTORY_ID = 2;
+global.AIRPORT_ID = 3;
 global.totalDemand = 0;
 
-global.consumer_demand = [1, 4, 6, 7];
+global.consumer_demand = [1, 3, 5, 7];
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
 random_consumer_spawn = random_range(5, 15);
@@ -79,7 +77,10 @@ global.week_num = 0;
 
 instance_deactivate_layer("Week_Display");
 
-alarm_set(0, game_get_speed(gamespeed_fps) * 2);
+alarm_set(0, 1);
 // alarm_set(0, game_get_speed(gamespeed_fps) * 120);  // new week every 2 minutes
 
 global.score = 0;
+
+global.button1 = 0;
+global.button2 = 0;

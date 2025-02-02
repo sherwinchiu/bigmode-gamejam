@@ -5,6 +5,8 @@ function pauseGame(endWeekOrPauseButton){
 	// if endWeekOrPauseButton -> True, the player just pressed the pause button
 	global.paused = true;
 	instance_deactivate_all(true);
+	layer_destroy("Week_Display");
+	layer_create(-101, "Week_Display");
 	if (!endWeekOrPauseButton) {
 		global.week_end = true;
 		global.leveled_up = false;
@@ -23,9 +25,10 @@ function pauseGame(endWeekOrPauseButton){
 		}
 		var producer_probability = [35, 70, 90, 100];
 		var chosen_first = 0;
+		depth = 300;
 		for(var i = 0; i < 4; i++) {
 			if (num1 < producer_probability[i]) {
-				var button1 = instance_create_layer(480, 405, "Week_Display", global.week_display_order[i]);
+				global.button1 = instance_create_layer(480, 405, "Week_Display", global.week_display_order[i]);
 				chosen_first = i;
 				break;
 			}
@@ -33,11 +36,11 @@ function pauseGame(endWeekOrPauseButton){
 		
 		for(var i = 0; i < 4; i++) {
 			if (num2 < producer_probability[i] && i != chosen_first) {
-				var button2 = instance_create_layer(1080, 405, "Week_Display", global.week_display_order[i]);
+				global.button2 = instance_create_layer(1080, 405, "Week_Display", global.week_display_order[i]);
 				break;
 			}
 		}
-		depth = 300;
+		
 		//var button2 = instance_create_layer(1080, 405, "Week_Display",  global.week_display_order[num2]);
 		depth = 0;
 		var background_pause = instance_create_layer(0, 0, "Week_Display", oWeekPauseBackground);
