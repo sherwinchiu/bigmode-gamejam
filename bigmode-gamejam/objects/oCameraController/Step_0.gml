@@ -11,17 +11,20 @@ if (global.week_end && !global.leveled_up) {
 		// deactivate everything outside viewport
 		//instance_deactivate_region(_vx, _vy, _vw, _vh, false, true);
 		// activate wires
+		
 		instance_deactivate_all(true);
 		instance_activate_object(oLine);
 		instance_activate_layer("Covers");
 		instance_activate_layer("GUI");
-		instance_activate_layer("Instances");
-		instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 		global.paused = false;
+		instance_activate_object(inst_8B6E3F4);
+		instance_activate_layer("Instances");
+		instance_destroy(global.button1);
+		instance_destroy(global.button2);
+		instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 	}
 }
-var mouse_x_start = 0;
-var mouse_y_start = 0;
+
 if (mouse_check_button_pressed(mb_middle)) {
 	mouse_x_start = window_views_mouse_get_x();
 	mouse_y_start = window_views_mouse_get_y();

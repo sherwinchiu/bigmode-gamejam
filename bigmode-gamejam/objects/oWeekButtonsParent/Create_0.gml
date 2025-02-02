@@ -1,4 +1,1 @@
-/// @description Pressable button created
-
-hovering = false;
-clicked = false
+this_room = -1;

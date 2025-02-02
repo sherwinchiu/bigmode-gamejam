@@ -1,13 +1,15 @@
 // draw producer
 
-draw_set_color(c_teal)
+draw_set_font(fToolbar);
 depth = 100;
+
 if (!global.paused) {
 	for (var i = 0; i < len; i++) {
-		if (global.producer_inv[i] >= 10) draw_text_transformed(buttons[i].x + 60, buttons[i].y + 30, string(global.producer_inv[i]), 3, 3, 0);	
-		else draw_text_transformed(buttons[i].x + 80, buttons[i].y + 30, string(global.producer_inv[i]), 3, 3, 0);	
+		/* I DONT KNOW WHY IT CRASHES all the objects exist :(
+		if (global.producer_inv[i] >= 10) draw_text(global.buttons[i].x + 80, global.buttons[i].y + 45, string(global.producer_inv[i]));	
+		else draw_text(global.buttons[i].x + 87, global.buttons[i].y + 45, string(global.producer_inv[i]));	
+		*/
 	}
-	draw_set_color(c_white);
 }
 
 depth = 0;
