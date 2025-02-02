@@ -1,26 +1,12 @@
 if (global.week_end && !global.leveled_up) {
 	if (cur_level < max_level) {
-		//show_debug_message(cur_level);
 		cur_level++;
-		//view_wview = min(max_zoom_width, view_wview + zoom_factor);
-		//view_hview = min(max_zoom_height, view_hview + zoom_factor);
-	
-		//global.view_xview -= (view_wview - old_w) / 2;
-		//global.view_yview -= (view_hview - old_h) / 2;
-	
-		// expand pan range
-		min_x_cam -= 288;
-		min_y_cam -= 162;
-		max_x_cam += 288;
-		max_y_cam += 162;
+		active_x -= 288;
+		active_w += 576;
+		active_y -= 162;
+		active_h += 324;
 		
-		// expand zoom range
-		max_zoom_width += 576;
-		max_zoom_height += 324;
 		
-		show_debug_message(string(min_x_cam) + ", " + string(min_y_cam) + " to " + string(max_x_cam) + ", " + string(max_y_cam));
-		show_debug_message("zoom: " + string(max_zoom_width) + ", " + string(max_zoom_height));
-	
 		global.leveled_up = true;
 		// deactivate everything outside viewport
 		//instance_deactivate_region(_vx, _vy, _vw, _vh, false, true);
@@ -29,7 +15,7 @@ if (global.week_end && !global.leveled_up) {
 		instance_activate_object(oLine);
 		instance_activate_layer("GUI");
 		instance_activate_layer("Instances");
-		instance_activate_region(min_x_cam, min_y_cam, max_zoom_width, max_zoom_height, true);
+		instance_activate_region(active_x, active_y, active_w, active_h, true);
 	}
 }
 
@@ -44,33 +30,42 @@ if (mouse_check_button(mb_middle)) {
     
 }
 
-//show_debug_message("before clamp ONE: " + string(global.view_xview) + ", " + string(global.view_yview) +" --- " + string(min_x_cam) + ", " + string(min_y_cam) + " to " + string(max_x_cam) + ", " + string(max_y_cam));
-
-global.view_xview = clamp(global.view_xview, min_x_cam, max_x_cam);
-global.view_yview = clamp(global.view_yview, min_y_cam, max_y_cam);
+global.view_xview = clamp(global.view_xview, active_x, active_x + active_w - view_wview);
+global.view_yview = clamp(global.view_yview, active_y, active_y + active_h - view_hview);
 
 var prev_view_w = view_wview;
 var prev_view_h = view_hview;
 
 if (mouse_wheel_up()) {
-    view_wview -= window_max_w / zoom_speed;
-    view_hview -= window_max_h / zoom_speed;
-	view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
-    view_hview = clamp(view_hview, min_zoom_height, max_zoom_height);
-    global.view_xview += (prev_view_w - view_wview) / 2;
-    global.view_yview += (prev_view_h - view_hview) / 2;
+    view_wview -= 16 * zoom_speed;
+    view_hview -= 9 * zoom_speed;
+	view_wview = clamp(view_wview, 1920, active_x + active_w - global.view_xview);
+    view_hview = clamp(view_hview, 1080, active_y + active_h - global.view_yview);
+    
+	global.view_xview += (prev_view_w - view_wview > 0) ? 8 * zoom_speed : 0;
+    global.view_yview += (prev_view_h - view_hview > 0) ? 4.5 * zoom_speed : 0;
 }
 
 if (mouse_wheel_down()) {
-    view_wview += window_max_w / zoom_speed;
-    view_hview += window_max_h / zoom_speed;
-	view_wview = clamp(view_wview, min_zoom_width, max_zoom_width);
-    view_hview = clamp(view_hview, min_zoom_height, max_zoom_height);
-    global.view_xview -= (view_wview - prev_view_w) / 2;
-    global.view_yview -= (view_hview - prev_view_h) / 2;
+    view_wview += 16 * zoom_speed;
+    view_hview += 9 * zoom_speed;
+	var diffX = (global.view_xview + view_wview) - (active_x + active_w);
+	var diffY = (global.view_yview + view_hview) - (active_y + active_h);
+	
+	view_wview = clamp(view_wview, 1920, active_x + active_w - global.view_xview);
+    view_hview = clamp(view_hview, 1080, active_y + active_h - global.view_yview);
+    if (diffX > 0) {
+		global.view_xview -= diffX;
+	}
+	if (diffY > 0) {
+		global.view_yview -= diffY;
+	}
+	global.view_xview -= 8 * zoom_speed;
+    global.view_yview -= 4.5 * zoom_speed;
 }
-global.view_xview = clamp(global.view_xview, min_x_cam, max_x_cam);
-global.view_yview = clamp(global.view_yview, min_y_cam, max_y_cam);
+
+global.view_xview = clamp(global.view_xview, active_x, active_x + active_w - view_wview);
+global.view_yview = clamp(global.view_yview, active_y, active_y + active_h - view_hview);
 
 camera_set_view_pos(camera, global.view_xview, global.view_yview);
 camera_set_view_size(camera, view_wview, view_hview);

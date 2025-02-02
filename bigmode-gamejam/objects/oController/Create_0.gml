@@ -79,3 +79,4 @@ layer_set_visible(lay_id, false);
 alarm_set(0, game_get_speed(gamespeed_fps) * 20);
 // alarm_set(0, game_get_speed(gamespeed_fps) * 120);  // new week every 2 minutes
 
+global.score = 0;
