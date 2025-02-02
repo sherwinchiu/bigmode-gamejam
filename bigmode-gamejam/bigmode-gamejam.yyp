@@ -129,6 +129,7 @@
     {"id":{"name":"sOilToolbar","path":"sprites/sOilToolbar/sOilToolbar.yy",},},
     {"id":{"name":"sOilWeekDisplay","path":"sprites/sOilWeekDisplay/sOilWeekDisplay.yy",},},
     {"id":{"name":"sProducer","path":"sprites/sProducer/sProducer.yy",},},
+    {"id":{"name":"sProducerBattery","path":"sprites/sProducerBattery/sProducerBattery.yy",},},
     {"id":{"name":"sSkipButton","path":"sprites/sSkipButton/sSkipButton.yy",},},
     {"id":{"name":"sSkipButtonClicked","path":"sprites/sSkipButtonClicked/sSkipButtonClicked.yy",},},
     {"id":{"name":"sSquare","path":"sprites/sSquare/sSquare.yy",},},

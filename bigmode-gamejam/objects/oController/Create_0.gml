@@ -65,6 +65,7 @@ global.AIRPORT_ID = 3;
 global.totalDemand = 0;
 
 global.consumer_demand = [1, 3, 5, 7];
+global.consumer_offset = [[120, 120], [180, 120], [240, 180], [300, 240]]; // for drawing lightbulbs at top right
 
 //-------------------- GENERATE RANDOM CONSUMERS OVER TIME ------------------------------
 random_consumer_spawn = random_range(5, 15);
