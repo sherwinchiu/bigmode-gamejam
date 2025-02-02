@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oContinueButton",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oTreeWeekDisplay",
+  "eventList":[],
   "managed":true,
-  "name":"oContinueButton",
+  "name":"oTreeWeekDisplay",
   "overriddenProperties":[],
   "parent":{
     "name":"Week Display",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCoalToolbar",
-    "path":"sprites/sCoalToolbar/sCoalToolbar.yy",
+    "name":"sTreeWeekDisplay",
+    "path":"sprites/sTreeWeekDisplay/sTreeWeekDisplay.yy",
   },
   "spriteMaskId":null,
   "visible":true,

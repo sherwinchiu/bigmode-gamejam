@@ -5,6 +5,7 @@
 // pause for week end
 
 pauseGame(false);
+global.week_num++;
 wire_length_available += 40;
 
 alarm_set(0, game_get_speed(gamespeed_fps) * 15);  // reset alarm on call
