@@ -28,6 +28,13 @@ if (global.week_end && !global.leveled_up) {
 		var _vy = camera_get_view_y(view_camera[0]);
 		var _vw = camera_get_view_width(view_camera[0]);
 		var _vh = camera_get_view_height(view_camera[0]);
+		// deactivate everything outside viewport
+		//instance_deactivate_region(_vx, _vy, _vw, _vh, false, true);
+		// activate wires
+		instance_deactivate_all(true);
+		instance_activate_object(oLine);
+		instance_activate_layer("GUI");
+		instance_activate_layer("Instances");
 		instance_activate_region(_vx, _vy, _vw, _vh, true);
 	}
 }

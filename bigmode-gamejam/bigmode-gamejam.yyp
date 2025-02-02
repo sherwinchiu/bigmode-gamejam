@@ -143,8 +143,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},},
+    {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
   ],
   "templateType":"game",
