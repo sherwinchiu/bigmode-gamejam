@@ -13,9 +13,11 @@ if (global.week_end && !global.leveled_up) {
 		// activate wires
 		instance_deactivate_all(true);
 		instance_activate_object(oLine);
+		instance_activate_layer("Covers");
 		instance_activate_layer("GUI");
 		instance_activate_layer("Instances");
 		instance_activate_region(active_x, active_y, active_w, active_h, true);
+		global.paused = false;
 	}
 }
 

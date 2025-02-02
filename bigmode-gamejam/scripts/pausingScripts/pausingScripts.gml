@@ -3,6 +3,7 @@
 function pauseGame(endWeekOrPauseButton){
 	// if endWeekOrPauseButton -> False, the week ended
 	// if endWeekOrPauseButton -> True, the player just pressed the pause button
+	global.paused = true;
 	instance_deactivate_all(true);
 	if (!endWeekOrPauseButton) {
 		global.week_end = true;
@@ -26,5 +27,7 @@ function pauseGame(endWeekOrPauseButton){
 
 function unpauseGame(){
 	// activates the camera, which will in-turn activate everything in the game
+	
 	instance_activate_object(inst_789A4457); 
+	
 }

@@ -3,7 +3,14 @@
 
 // choose a consumer object randomly 
 show_debug_message("RUN");
-drawConsumerBuilding(oHouse, sHouse);
+
+var building_num = irandom_range(0, 100);
+for(var i = 0; i < 4; i++){
+	if (building_num < consumer_probability[i]) {
+		drawConsumerBuilding(global.consumer_order[i], consumer_sprites[i]);
+		break;
+	}
+}
 
 
 random_consumer_spawn = random_range(5, 10);

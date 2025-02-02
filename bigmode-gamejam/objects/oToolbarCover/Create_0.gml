@@ -1,2 +1,4 @@
 hovering = false;
-clicked = false;
+clicked = false
+
+image_alpha = 0.4;
