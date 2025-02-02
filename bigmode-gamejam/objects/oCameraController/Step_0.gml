@@ -35,7 +35,7 @@ if (global.week_end && !global.leveled_up) {
 		instance_activate_object(oLine);
 		instance_activate_layer("GUI");
 		instance_activate_layer("Instances");
-		instance_activate_region(_vx, _vy, _vw, _vh, true);
+		instance_activate_region(min_x_cam, min_y_cam, max_zoom_width, max_zoom_height, true);
 	}
 }
 

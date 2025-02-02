@@ -22,10 +22,6 @@ function pauseGame(endWeekOrPauseButton){
 		
 		
 	}
-	
-
-	
-
 }
 
 function unpauseGame(){
