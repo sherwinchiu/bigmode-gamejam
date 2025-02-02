@@ -18,7 +18,7 @@ function placeBuilding(curr_tile, curr_x, curr_y){
 					array_push(global.allProducers, newBuilding);
 				}
 				global.producer_inv[global.curr_building]--;
-				global.curr_building = -1;
+				//global.curr_building = -1;
 			} else {
 				show_debug_message("collide");	
 			}

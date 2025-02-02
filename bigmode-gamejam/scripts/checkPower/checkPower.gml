@@ -12,18 +12,27 @@ function checkPower() {
 	// this can be optimized
 	for (var i = 0; i < numP; i++) {
 		var curP = global.allProducers[i];
-		var numC = array_length(curP.connected_consumers);
 		var powerGenerated = global.producer_energy[curP.producer_type];
-		var powerDistributed = powerGenerated / numC;
-		for (var j = 0; j < numC; ++j) {
-			curP.connected_consumers[j].current_demand -= powerDistributed;
+		var powerDistributed = powerGenerated / ds_map_size(curP.connected_consumers);
+		for (var k = ds_map_find_first(curP.connected_consumers); !is_undefined(k); k = ds_map_find_next(curP.connected_consumers, k)) {
+			k.current_demand -= powerDistributed;
 			global.curProvided += powerDistributed;
 		}
 	}
 	for (var i = 0; i < n; i++) {
-		if (global.allConsumers[i].current_demand <= 0) {
-			global.score += global.consumer_demand[global.allConsumers[i].consumer_type];
-			//show_debug_message("ID: " + string(i) + " !!! NOT POWERED: need " + string(global.allConsumers[i].current_demand));
+		var curConsumer = global.allConsumers[i];
+		if (curConsumer.current_demand <= 0) {
+			if (!curConsumer.is_powered) {
+				global.score += global.consumer_demand[global.allConsumers[i].consumer_type];
+			}
+			curConsumer.alarmed = false;
+			curConsumer.isPowered = true;
+		} else {
+			if (curConsumer.is_powered) {
+				global.score -= global.consumer_demand[global.allConsumers[i].consumer_type];
+			}
+			curConsumer.alarmed = true;
+			curConsumer.isPowered = false;
 		}
 	}
 }

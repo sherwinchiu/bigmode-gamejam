@@ -72,3 +72,14 @@ global.view_yview = clamp(global.view_yview, global.active_y, global.active_y + 
 
 camera_set_view_pos(camera, global.view_xview, global.view_yview);
 camera_set_view_size(camera, view_wview, view_hview);
+
+var num_c = array_length(global.allConsumers);
+for (var i = 0; i < num_c; i++) {
+	var cur_c = global.allConsumers[i];
+	if (cur_c.x < global.view_xview || cur_c.x > global.view_xview + view_wview || cur_c.y < global.view_yview || cur_c.y > global.view_yview + view_hview) {
+		var mid_x = (global.view_xview + view_wview) / 2;
+		var mid_y = (global.view_yview + view_hview) / 2;
+		var angle = point_direction(mid_x, mid_y, cur_c.x, cur_c.y);
+		
+	}
+}
