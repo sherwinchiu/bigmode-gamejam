@@ -5,7 +5,8 @@ if (clicked) {
 } else if (hovering) {
 	if (mouse_check_button(mb_left)) {
 		image_alpha = 0.6; // animation for on click
-		alarm[0] = 10;
+		oToolbarCover.clicked = false;
+		alarm_set(0, 10);
 	} else {
 		image_alpha = 0.2; // on hover
 	}
