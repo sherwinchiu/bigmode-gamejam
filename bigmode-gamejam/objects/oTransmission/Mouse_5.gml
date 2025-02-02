@@ -18,5 +18,5 @@ for (var i = ds_map_find_first(connected_producers); !is_undefined(i); i = ds_ma
 }
 var tile = instance_position(x, y, oTileParent);
 tile.has_building = false;
-
+global.producer_inv[global.TRANMISSIONTOWERID]++;
 instance_destroy();

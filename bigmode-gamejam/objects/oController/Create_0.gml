@@ -47,7 +47,7 @@ global.TRANMISSIONTOWERID = 4; // *****TEMPORARY FOR TESTING*****
 
 // track producer points
 global.producer_energy = [3, 1, 2, 10];
-global.producer_inv = [1, 10, 1, 1, 3];
+global.producer_inv = [1, 2, 1, 1, 3];
 global.producers_to_add = [2, 6, 3, 1];
 global.curProvided = 0;
 
