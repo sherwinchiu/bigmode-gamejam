@@ -22,8 +22,7 @@ if (global.week_end && !global.leveled_up) {
 		instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 	}
 }
-var mouse_x_start = 0;
-var mouse_y_start = 0;
+
 if (mouse_check_button_pressed(mb_middle)) {
 	mouse_x_start = window_views_mouse_get_x();
 	mouse_y_start = window_views_mouse_get_y();
