@@ -3,6 +3,7 @@
 
 
 // pause for week end
+
 pauseGame(false);
 wire_length_available += 40;
 

@@ -31,6 +31,7 @@ if (global.week_end && !global.leveled_up) {
 		instance_activate_layer("GUI");
 		instance_activate_layer("Instances");
 		instance_activate_region(global.min_x_cam, global.min_y_cam, global.max_zoom_width, global.max_zoom_height, true);
+		global.paused = false;
 	}
 }
 
