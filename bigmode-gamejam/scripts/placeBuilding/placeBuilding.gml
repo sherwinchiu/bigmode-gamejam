@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function placeBuilding(curr_tile, curr_x, curr_y){
 	// check if that the current building the player selected is the same as curr_tile
+	audio_play_sound(global.sounds[curr_tile], 1, false);
 	if (global.curr_building == curr_tile) {
 		// if it's the same, then you can place the building
 		
