@@ -12,7 +12,7 @@ function drawConsumerBuilding(obj, sprite){
 		}
 		other_inst_found = false;
 		// tile is top, bottom or right of active arrow
-		if (random_grass_tile.y <= global.min_y_cam || random_grass_tile.y + sprite_get_height(sprite)/2 >= global.min_y_cam + global.max_zoom_height || random_grass_tile.x + sprite_get_width(sprite)/2 >= global.min_x_cam +global.max_zoom_width) {
+		if (random_grass_tile.y <= global.active_y || random_grass_tile.y + sprite_get_height(sprite)/2 >= global.active_y + global.active_h|| random_grass_tile.x + sprite_get_width(sprite)/2 >= global.active_x +global.active_w) {
 			other_inst_found = true;
 		}
 		// check no other tiles are hindering the building

@@ -18,10 +18,10 @@ cam_y = camera_get_view_y(camera);
 show_debug_message("Actual Camera Position: " + string(cam_x) + ", " + string(cam_y));
 
 
-active_x = global.view_xview;
-active_y = global.view_yview;
-active_w = view_wview;
-active_h = view_hview;
+global.active_x = global.view_xview;
+global.active_y = global.view_yview;
+global.active_w = view_wview;
+global.active_h = view_hview;
 
 cur_level = 0;
 max_level = 10;
