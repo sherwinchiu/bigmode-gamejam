@@ -13,5 +13,5 @@ for(var i = 0; i < 4; i++){
 }
 
 
-random_consumer_spawn = random_range(5, 10);
+random_consumer_spawn = random_range(10, 15);
 alarm_set(1, game_get_speed(gamespeed_fps) * random_consumer_spawn); // reset timer

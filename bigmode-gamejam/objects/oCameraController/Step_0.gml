@@ -8,19 +8,16 @@ if (global.week_end && !global.leveled_up) {
 		
 		
 		global.leveled_up = true;
-		// deactivate everything outside viewport
-		//instance_deactivate_region(_vx, _vy, _vw, _vh, false, true);
-		// activate wires
 		
 		instance_deactivate_all(true);
 		instance_activate_object(oLine);
 		instance_activate_layer("Covers");
 		instance_activate_layer("GUI");
 		global.paused = false;
-		instance_activate_object(inst_8B6E3F4);
 		instance_activate_layer("Instances");
 		instance_destroy(global.button1);
 		instance_destroy(global.button2);
+		instance_deactivate_layer("Week_Display");
 		instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 	}
 }
