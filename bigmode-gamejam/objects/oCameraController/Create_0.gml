@@ -28,12 +28,12 @@ max_y_cam = global.view_yview;
 mouse_x_start = window_views_mouse_get_x;
 mouse_y_start = window_views_mouse_get_x;
 min_zoom_width = view_wview;
-max_zoom_width = room_width;
+max_zoom_width = view_wview;
 min_zoom_height = view_hview;
-max_zoom_height = room_height;
+max_zoom_height = view_hview;
 
 cur_level = 0;
-max_level = 5;
+max_level = 10;
 zoom_factor = 120;
 global.leveled_up = true;
 
