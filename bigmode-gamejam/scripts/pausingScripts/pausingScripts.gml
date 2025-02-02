@@ -5,15 +5,14 @@ function pauseGame(endWeekOrPauseButton){
 	// if endWeekOrPauseButton -> True, the player just pressed the pause button
 	global.paused = true;
 	instance_deactivate_all(true);
-	layer_destroy("Week_Display");
-	layer_create(-101, "Week_Display");
+	show_debug_message(global.button1);
 	if (!endWeekOrPauseButton) {
 		global.week_end = true;
 		global.leveled_up = false;
 		show_debug_message("week ended");
 		// show Week_Display 
 		//instance_activate_layer("Week_Display");
-		instance_activate_layer("Week_Display");
+		//instance_activate_layer("Week_Display");
 		var lay_id = layer_get_id("Week_Display");
 		layer_set_visible(lay_id, true);
 		// random number between 1-6 to choose which producer to choose
@@ -55,7 +54,9 @@ function pauseGame(endWeekOrPauseButton){
 function unpauseGame(){
 	// activates the camera, which will in-turn activate everything in the game
 	instance_destroy(oWeekPauseBackground);
-	instance_deactivate_layer("Week_Display");
+	for(var i = 0; i < 4; i++){
+		instance_destroy(global.week_display_order[i]);	
+	}
 	var lay_id = layer_get_id("Week_Display");
 	layer_set_visible(lay_id, false);
 	instance_activate_object(inst_789A4457);
