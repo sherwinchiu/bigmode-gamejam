@@ -21,16 +21,16 @@ show_debug_message("Actual Camera Position: " + string(cam_x) + ", " + string(ca
 window_max_w = view_wview;
 window_max_h = view_hview;
 is_panning = false;
-min_x_cam = global.view_xview;
+global.min_x_cam = global.view_xview;
 max_x_cam = global.view_xview;
-min_y_cam = global.view_yview;
+global.min_y_cam = global.view_yview;
 max_y_cam = global.view_yview;
 mouse_x_start = window_views_mouse_get_x;
 mouse_y_start = window_views_mouse_get_x;
 min_zoom_width = view_wview;
-max_zoom_width = view_wview;
+global.max_zoom_width = view_wview;
 min_zoom_height = view_hview;
-max_zoom_height = view_hview;
+global.max_zoom_height = view_hview;
 
 cur_level = 0;
 max_level = 10;
