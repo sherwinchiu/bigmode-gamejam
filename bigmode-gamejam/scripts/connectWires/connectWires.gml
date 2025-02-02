@@ -1,3 +1,31 @@
+function addToMap(map, val) {
+	if(ds_map_exists(map, val)) map[?val]++;
+	else map[?val] = 1;
+}
+
+function union_map(map1, map2) {
+	var new_map = ds_map_create();
+	
+	for (var k = ds_map_find_first(map1); !is_undefined(k); k = ds_map_find_next(map1, k)) {
+		new_map[?k] = map1[?k];
+	}
+	
+	for (var k = ds_map_find_first(map2); !is_undefined(k); k = ds_map_find_next(map2, k)) {
+		new_map[?k] = map2[?k];
+	}
+	
+	ds_map_clear(map1);
+	ds_map_clear(map2);
+	
+	
+	for (var k = ds_map_find_first(new_map); !is_undefined(k); k = ds_map_find_next(new_map, k)) {
+		map1[?k] = new_map[?k];
+		map2[?k] = new_map[?k];
+	}
+	
+	ds_map_destroy(new_map);
+}
+
 function connectWires(c1, c2) {
 	// hard coded numbers in parent object
 	var producerID = 0;
@@ -7,50 +35,39 @@ function connectWires(c1, c2) {
 	
 	if (c1.building_type > c2.building_type) return connectWires(c2, c1);
 	
-	if (c1.building_type == producerID && c2.building_type == transmissionID && !array_contains(c2.direct_connections, c1)) {
+	if (c1.building_type == producerID && c2.building_type == transmissionID && !ds_map_exists(c2.direct_connections, c1)) {
 		// add all consumers connected to transmission tower to the producer
-		var n = array_length(c2.connected_consumers);
-		if (n > 0) {
-			for (var i = 0; i < n; i++) {
-				array_push(c1.connected_consumers, c2.connected_consumers[i]);
-			}
+		for (var k = ds_map_find_first(c2.connected_consumers); !is_undefined(k); k = ds_map_find_next(c2.connected_consumers, k)) {
+			addToMap(c1.connected_consumers, k);
 		}
-		array_push(c2.connected_producers, c1);
-		array_push(c2.direct_connections, c1);
+		addToMap(c2.connected_producers, c1);
+		addToMap(c2.direct_connections, c1);
 		connected = true;
 	}
-	if (c1.building_type == consumerID && c2.building_type = transmissionID && !array_contains(c2.direct_connections, c1)) {
+	if (c1.building_type == consumerID && c2.building_type = transmissionID && !ds_map_exists(c2.direct_connections, c1)) {
 		// add consumer to transmission tower's array + add consumer to all producers connected to tranmission tower
-		array_push(c2.connected_consumers, c1);
-		var n = array_length(c2.connected_producers);
-		
-		for (var i = 0; i < n; i++) {
-			array_push(c2.connected_producers[i].connected_consumers, c1);
+		addToMap(c2.connected_consumers, c1);
+		for (var k = ds_map_find_first(c2.connected_producers); !is_undefined(k); k = ds_map_find_next(c2.connected_producers, k)) {
+			addToMap(k.connected_consumers, c1);
 		}
-		array_push(c2.direct_connections, c1);
+
+		addToMap(c2.direct_connections, c1);
 		connected = true;
 	}
 	
-	if (c1.building_type == transmissionID && c2.building_type == transmissionID && !array_contains(c2.direct_connections, c1)) {
+	if (c1.building_type == transmissionID && c2.building_type == transmissionID && !ds_map_exists(c2.direct_connections, c1)) {
 		// this is unoptimized :(
-		var p_union = array_unique(array_concat(c1.connected_producers, c2.connected_producers));
-
-		c1.connected_producers = p_union;
-		c2.connected_producers = p_union;
 		
-		var c_union = array_unique(array_concat(c1.connected_consumers, c2.connected_consumers));
-		c1.connected_consumers = c_union;
-		c2.connected_consumers = c_union;
+		union_map(c1.connected_producers, c2.connected_producers);
+		union_map(c1.connected_consumers, c2.connected_consumers);	
 		
-		var prod_len = array_length(p_union);
-		for (var i = 0; i < prod_len; i++) {
-			var temp = array_unique(array_concat(p_union[i].connected_consumers, c_union));	
-			p_union[i].connected_consumers = temp;
+		for (var k = ds_map_find_first(c1.connected_producers); !is_undefined(k); k = ds_map_find_next(c1.connected_producers, k)) {
+			union_map(k.connected_consumers, c1.connected_consumers);
 		}
 		
 		connected = true;
-		array_push(c1.direct_connections, c2);
-		array_push(c2.direct_connections, c1);
+		addToMap(c1.direct_connections, c2);
+		addToMap(c2.direct_connections, c1);
 	}
 	if (connected) {
 		var newWire = instance_create_layer(0, 0, "Instances", oLine);

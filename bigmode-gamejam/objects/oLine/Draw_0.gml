@@ -4,7 +4,7 @@ if (start_circle != noone && end_circle != noone && !drawn) {
 	drawn = true;
 }
 
-if (wire_path != noone) {
+if (instance_exists(start_circle) && instance_exists(end_circle) && wire_path != noone) {
 	draw_set_colour(c_white);
 	drawWire(wire_path, start_circle.x, start_circle.y, end_circle.x, end_circle.y, false);
 }

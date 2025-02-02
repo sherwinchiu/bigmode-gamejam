@@ -6,3 +6,5 @@ is_selected = false;
 consumer_type = global.AIRPORT_ID;
 current_demand = -1;
 building_type = 1;
+is_powered = false;
+alarmed = false;
