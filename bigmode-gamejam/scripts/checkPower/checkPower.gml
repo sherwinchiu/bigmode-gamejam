@@ -21,7 +21,8 @@ function checkPower() {
 		}
 	}
 	for (var i = 0; i < n; i++) {
-		if (global.allConsumers[i].current_demand > 0) {
+		if (global.allConsumers[i].current_demand <= 0) {
+			global.score += global.cur_level + 1;
 			//show_debug_message("ID: " + string(i) + " !!! NOT POWERED: need " + string(global.allConsumers[i].current_demand));
 		}
 	}

@@ -23,7 +23,7 @@ global.active_y = global.view_yview;
 global.active_w = view_wview;
 global.active_h = view_hview;
 
-cur_level = 0;
+global.cur_level = 0;
 max_level = 10;
 zoom_factor = 120;
 global.leveled_up = true;

@@ -1,6 +1,6 @@
 if (global.week_end && !global.leveled_up) {
-	if (cur_level < max_level) {
-		cur_level++;
+	if (global.cur_level < max_level) {
+		global.cur_level++;
 		global.active_x -= 288;
 		global.active_w += 576;
 		global.active_y -= 162;
@@ -20,7 +20,8 @@ if (global.week_end && !global.leveled_up) {
 		global.paused = false;
 	}
 }
-
+var mouse_x_start = 0;
+var mouse_y_start = 0;
 if (mouse_check_button_pressed(mb_middle)) {
 	mouse_x_start = window_views_mouse_get_x();
 	mouse_y_start = window_views_mouse_get_y();
