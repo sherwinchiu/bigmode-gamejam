@@ -108,6 +108,7 @@
     {"id":{"name":"pausingScripts","path":"scripts/pausingScripts/pausingScripts.yy",},},
     {"id":{"name":"placeBuilding","path":"scripts/placeBuilding/placeBuilding.yy",},},
     {"id":{"name":"seqHouse","path":"sequences/seqHouse/seqHouse.yy",},},
+    {"id":{"name":"City_12","path":"sounds/City_12/City_12.yy",},},
     {"id":{"name":"click","path":"sounds/click/click.yy",},},
     {"id":{"name":"coal","path":"sounds/coal/coal.yy",},},
     {"id":{"name":"oil","path":"sounds/oil/oil.yy",},},

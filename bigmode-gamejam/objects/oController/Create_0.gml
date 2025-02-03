@@ -89,3 +89,5 @@ going_to_lose = false;
 percent = 0;
 lose_counter = 10;
 global.isTouchingToolbar = false;
+
+audio_play_sound(City_12, 1, true);

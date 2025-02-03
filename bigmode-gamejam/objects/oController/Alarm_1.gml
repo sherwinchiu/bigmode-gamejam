@@ -15,7 +15,7 @@ for(var i = 0; i < 4; i++){
 if (global.week_num/2 < 7) {
 	random_consumer_spawn = random_range(15-global.week_num/2, 20-global.week_num/2);
 } else {
-	random_consumer_spawn = random_range(5, 10);
+	random_consumer_spawn = random_range(3, 7);
 }
 
 
