@@ -30,13 +30,15 @@ if (cur_dialogue == 5) { // place coal mine
 
 if (cur_dialogue == 8 && !house_spawned) { // spawn a house
     drawConsumerBuilding(oHouse, sHouse);
+	var house = instance_find(oHouse, 0);
+	house.current_demand = 1;
 	house_spawned = true;
 }
 
 if (cur_dialogue == 12) { // show transmission tower button
     instance_create_layer(45, 780, "GUI", oTransmissionButton);
 }
-
+show_debug_message(global.curr_building);
 if (cur_dialogue == 13) {//  click transmission tower
 	if(global.curr_building != global.TRANMISSIONTOWERID) {
 		dialogue_timer = 10;

@@ -71,7 +71,7 @@ global.consumer_offset = [[120, 120], [180, 120], [240, 180], [300, 240]]; // fo
 random_consumer_spawn = random_range(5, 15);
 alarm_set(1, game_get_speed(gamespeed_fps) * 1);
 
-global.tutorial = true;
+global.tutorial = false;
 //-------------------- DISPLAY WEEK END ------------------------------
 // disable week display
 global.week_num = 0;
