@@ -9,6 +9,5 @@ if (!global.isTouchingToolbar && hovering && mouse_check_button_pressed(mb_left)
 {
 	// place tile
 	placeBuilding(current_tile, x, y);
-	
 	has_building = true;	
 }

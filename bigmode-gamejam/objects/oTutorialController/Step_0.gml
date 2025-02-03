@@ -1,3 +1,4 @@
+show_debug_message(cur_dialogue);
 if (dialogue_timer > 0) {
     dialogue_timer--;
 } else {
@@ -28,8 +29,9 @@ if (cur_dialogue == 5) { // place coal mine
     }
 }
 
-if (cur_dialogue == 8) { // spawn a house
+if (cur_dialogue == 8 && !house_spawned) { // spawn a house
     drawConsumerBuilding(oHouse, sHouse);
+	house_spawned = true;
 }
 
 if (cur_dialogue == 12) { // show transmission tower button
