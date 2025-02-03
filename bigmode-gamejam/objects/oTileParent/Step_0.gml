@@ -5,7 +5,7 @@ var zoom_factor_y = camera_get_view_height(view_camera[0]) / room_height;
 
 hovering = position_meeting(mouse_x, mouse_y, id);
 
-if (!global.isTouchingToolbar && hovering && mouse_check_button_pressed(mb_left) && !has_building && global.curr_building == current_tile) 
+if (!global.isTouchingToolbar && hovering && mouse_check_button_pressed(mb_left) && !has_building && global.curr_building == current_tile && global.producer_inv[current_tile] > 0) 
 {
 	// place tile
 	placeBuilding(current_tile, x, y);
