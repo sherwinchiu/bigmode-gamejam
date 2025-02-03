@@ -7,6 +7,7 @@ if (hovering) {
 } 
 if (hovering && mouse_check_button_pressed(mb_left)) 
 {
+	audio_play_sound(click, 1, false);
 	clicked = true;
 	activate_button();
 	show_debug_message("button pressed" + string(global.curr_building));

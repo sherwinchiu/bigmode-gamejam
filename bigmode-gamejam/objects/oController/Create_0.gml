@@ -75,7 +75,7 @@ alarm_set(1, game_get_speed(gamespeed_fps) * 1);
 //-------------------- DISPLAY WEEK END ------------------------------
 // disable week display
 global.week_num = 0;
-
+global.consumers_lightbulbs = 0;
 instance_deactivate_layer("Week_Display");
 
 alarm_set(0, 1);

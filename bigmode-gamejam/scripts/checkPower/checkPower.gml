@@ -23,20 +23,4 @@ function checkPower() {
 			curP.energy_used += powerDistributed;
 		}
 	}
-	for (var i = 0; i < n; i++) {
-		var curConsumer = global.allConsumers[i];
-		if (curConsumer.current_demand <= 0) {
-			if (!curConsumer.is_powered) {
-				global.score += global.consumer_demand[global.allConsumers[i].consumer_type];
-			}
-			curConsumer.alarmed = false;
-			curConsumer.isPowered = true;
-		} else {
-			if (curConsumer.is_powered) {
-				global.score -= global.consumer_demand[global.allConsumers[i].consumer_type];
-			}
-			curConsumer.alarmed = true;
-			curConsumer.isPowered = false;
-		}
-	}
 }

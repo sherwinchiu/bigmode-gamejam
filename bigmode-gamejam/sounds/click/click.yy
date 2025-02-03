@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"oil",
+  "%Name":"click",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.253878,
-  "name":"oil",
+  "duration":0.417959,
+  "name":"click",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"oil.mp3",
+  "soundFile":"click.mp3",
   "type":0,
   "volume":1.0,
 }
