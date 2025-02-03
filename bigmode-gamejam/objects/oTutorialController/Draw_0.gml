@@ -15,7 +15,7 @@ if (dialogue_break_timer > 0) {
 			draw_set_font(fTutorial);
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_middle);
-			draw_text(960, 660, "If the wire is red, your wire is too long. Add another transmission tower!");	
+			draw_text(960, 275, "If the wire is red, your wire is too long.\nAdd another transmission tower!");	
 		}
 	}
 }

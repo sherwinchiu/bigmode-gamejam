@@ -5,6 +5,7 @@ if (dialogue_timer > 0) {
         cur_dialogue++;
         dialogue_timer = DIALOGUE_TIMER;
         dialogue_break_timer = BREAK_TIMER;
+		if (cur_dialogue == 22) dialogue_timer = game_get_speed(gamespeed_fps) * 15;
     }
 	if (cur_dialogue == 23) {
 		audio_stop_sound(City_12);
