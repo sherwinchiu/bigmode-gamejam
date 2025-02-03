@@ -29,7 +29,7 @@ if (selected_circle != noone) {
 
 if (percent == 0 && !going_to_lose && !global.paused) {
 	going_to_lose = true;
-	alarm_set(2,  game_get_speed(gamespeed_fps) * 10);
+	alarm_set(2,  game_get_speed(gamespeed_fps) * 1);
 } else if (percent > 0 && going_to_lose) {
 	going_to_lose = false;	
 	alarm_set(2,  game_get_speed(gamespeed_fps) * 100000);
