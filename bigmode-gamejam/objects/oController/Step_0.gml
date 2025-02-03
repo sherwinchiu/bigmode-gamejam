@@ -23,10 +23,14 @@ if (selected_circle != noone) {
 	    dragging_wire = true;
 	}
 }
-//if (instance_position(mouse_x, mouse_y, oWire)) {
-//	show_debug_message("hello");
-//}
-// electricity calculations
+
+if (percent == 0 && !going_to_lose) {
+	going_to_lose = true;
+	alarm_set(2,  game_get_speed(gamespeed_fps) * 15);
+} else if (percent > 0 && going_to_lose) {
+	going_to_lose = false;	
+	alarm_set(2,  game_get_speed(gamespeed_fps) * 100000);
+}
 checkPower();
 
 	// display demand for consumers

@@ -85,5 +85,6 @@ global.score = 0;
 
 global.button1 = 0;
 global.button2 = 0;
-
+going_to_lose = false;
+percent = 0;
 global.isTouchingToolbar = false;

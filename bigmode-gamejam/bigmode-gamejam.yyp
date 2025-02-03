@@ -97,6 +97,7 @@
     {"id":{"name":"oWeekPauseBackground","path":"objects/oWeekPauseBackground/oWeekPauseBackground.yy",},},
     {"id":{"name":"oWire","path":"objects/oWire/oWire.yy",},},
     {"id":{"name":"oWireDraggable","path":"objects/oWireDraggable/oWireDraggable.yy",},},
+    {"id":{"name":"end_screen","path":"rooms/end_screen/end_screen.yy",},},
     {"id":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},},
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
@@ -170,6 +171,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},},
+    {"roomId":{"name":"end_screen","path":"rooms/end_screen/end_screen.yy",},},
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
   ],

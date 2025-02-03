@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMenuButton",
-    "path":"sprites/sMenuButton/sMenuButton.yy",
+    "name":"sMenuButtonClicked",
+    "path":"sprites/sMenuButtonClicked/sMenuButtonClicked.yy",
   },
   "spriteMaskId":null,
   "visible":true,
