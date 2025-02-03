@@ -93,5 +93,5 @@ lose_counter = 10;
 global.isTouchingToolbar = false;
 
 tracks = [City_12, pain, too_many_thoughts];
-track_selection = 0;
-current_track = audio_play_sound(City_12, 1, false);
+track_selection = 1;
+current_track = audio_play_sound(tracks[track_selection], 1, false);
