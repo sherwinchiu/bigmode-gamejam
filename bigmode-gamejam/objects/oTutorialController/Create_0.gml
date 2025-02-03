@@ -1,5 +1,5 @@
 /// @description On Gameplay Start
-DIALOGUE_TIMER = game_get_speed(gamespeed_fps) * 0.5;
+DIALOGUE_TIMER = game_get_speed(gamespeed_fps) * 1;
 BREAK_TIMER = game_get_speed(gamespeed_fps) * 0.2;
 dialogue_timer = DIALOGUE_TIMER;
 dialogue_break_timer = BREAK_TIMER;
@@ -8,10 +8,12 @@ dialogue_arr = [sTutorial2, sTutorial2b, sTutorial4, sTutorial2a, sTutorial3, sT
 dialogue_text = ["Welcome to [game name]!", "Based on the theme of \"Power\"", "[game name] is about keeping the city powered!", "This is a power producer.", "Click on the coal producer to select it.", "Click on a coal mine tile (navy) to place it.", "The number indicates how much power the producer provides.", "This is a power consumer.", "The lightbulb indicates how “powered” each consumer is.", "The number indicates how much power the consumer needs.", "You cannot directly connect producers with consumers.", "This is a transmission tower.", "Click on the transmission tower to select it.", "Click somewhere to place the transmission tower.", "Drag from the coal mine to the transmission tower to connect them.", "Drag from the transmission tower to the house to connect them.", "Nice! This house is now fully powered.", "These are the other available producers.", "Oil sands are yellow, tree tiles are green, and water tiles are blue.", "Each producer generates a different amount of power.", "At the end of each week, you receive more materials.", "Choose the oil rig producer.", "Select and place an oil rig producer.", "Power the factory!", "Nice! The oil rig provided enough power for the factory.", "The battery at the top shows the overall level of power.", "If your city goes without power for too long, you lose :(", "The clock lets you keep track of when you’ll get more resources.", "You have completed the tutorial. Good luck and have fun!"];
 next_state = "";
 house_spawned = false;
-
+alreadyPaused = false;
+global.tutorial = true;
 randomize();
 selected_circle = noone;
 dragging_wire = false;
+
 
 global.controller = self; 
 

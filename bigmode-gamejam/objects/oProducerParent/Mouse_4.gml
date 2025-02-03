@@ -1,4 +1,5 @@
 if (!is_ghost) {
 	is_selected = true;
-	oController.selected_circle = id;
+	if (global.tutorial) oTutorialController.selected_circle = id;
+	else oController.selected_circle = id;
 }

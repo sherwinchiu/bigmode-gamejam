@@ -1,4 +1,3 @@
-show_debug_message(cur_dialogue);
 if (dialogue_timer > 0) {
     dialogue_timer--;
 } else {
@@ -73,10 +72,17 @@ if (cur_dialogue == 18) { // show other producer buttons
 	// NEED TO ADD COVERS
 }
 
-if (cur_dialogue == 22) { // trigger week end, make user select one
+if (cur_dialogue == 22 && !alreadyPaused) { // trigger week end, make user select one
 	pauseGame(false);
 	global.producer_inv[global.TRANMISSIONTOWERID] += 3;
+	alreadyPaused = true;
 }
+
+if (cur_dialogue == 22 && global.paused) {
+	dialogue_timer = 10;
+	dialogue_timer++;
+}
+
 if (cur_dialogue == 23) { // select & place oil
 	if (!instance_exists(oOilSandProducer)) {
 		dialogue_timer = 10;
@@ -91,3 +97,33 @@ if (cur_dialogue == 23) { // select & place oil
 // if (28) // show clock
 
 // if (29) // tutorial done
+
+
+// connect wires:
+if (selected_circle != noone) {
+	if (mouse_check_button_released(mb_left)) {
+		// find what circle you drop it on
+	    var dest_circle = instance_position(mouse_x, mouse_y, oWireDraggable);
+
+	    if (dest_circle != noone && dest_circle != selected_circle && global.can_connect_wire) {	
+			connectWires(selected_circle, dest_circle);
+			audio_play_sound(cableafter, 1, false);
+	        // reset states
+	        selected_circle.is_selected = false;
+	        selected_circle = noone;
+	        dragging_wire = false;
+	    } else {
+	        selected_circle.is_selected = false;
+	        selected_circle = noone;
+	        dragging_wire = false;
+			global.can_connect_wire = true;
+			//instance_destroy(oWire, true);
+	    }
+	}
+	if (mouse_check_button(mb_left)) {
+		if (!dragging_wire) {
+			audio_play_sound(cable, 1, false);	
+		}
+	    dragging_wire = true;
+	}
+}

@@ -6,7 +6,7 @@ show_debug_message(string(global.view_xview) + " X, Y->" + string(global.view_yv
 
 instance_deactivate_all(true);
 instance_activate_layer("GUI");
-instance_activate_object(oController);
+if(!global.tutorial) instance_activate_object(oController);
 instance_activate_region(global.view_xview, global.view_yview, view_wview, view_hview, true);
 
 camera = camera_create_view(global.view_xview, global.view_yview, view_wview, view_hview);
