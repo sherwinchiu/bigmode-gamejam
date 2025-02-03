@@ -24,7 +24,7 @@ if (frameToDraw == 9 && !is_powered) {
 	is_powered = true;
 	global.battery_filled += 1;
 }
-if (frameToDraw == 0 && is_powered) {
+if (frameToDraw < 9 && is_powered) {
 	is_powered = false;
 	global.battery_filled -= 1;
 }
