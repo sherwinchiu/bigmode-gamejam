@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"City_12",
+  "%Name":"cable",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":145.13632,
-  "name":"City_12",
+  "duration":0.768,
+  "name":"cable",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"City_12.mp3",
+  "soundFile":"cable.mp3",
   "type":0,
-  "volume":0.04,
+  "volume":1.0,
 }

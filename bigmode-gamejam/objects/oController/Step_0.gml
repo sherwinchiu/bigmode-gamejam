@@ -6,7 +6,7 @@ if (selected_circle != noone) {
 
 	    if (dest_circle != noone && dest_circle != selected_circle && global.can_connect_wire) {	
 			connectWires(selected_circle, dest_circle);
-				
+			audio_play_sound(cableafter, 1, false);
 	        // reset states
 	        selected_circle.is_selected = false;
 	        selected_circle = noone;
@@ -20,6 +20,9 @@ if (selected_circle != noone) {
 	    }
 	}
 	if (mouse_check_button(mb_left)) {
+		if (!dragging_wire) {
+			audio_play_sound(cable, 1, false);	
+		}
 	    dragging_wire = true;
 	}
 }
