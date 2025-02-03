@@ -24,4 +24,8 @@ if (frameToDraw == 9 && !is_powered) {
 	is_powered = true;
 	global.battery_filled += 1;
 }
+if (frameToDraw == 0 && is_powered) {
+	is_powered = false;
+	global.battery_filled -= 1;
+}
 draw_sprite(sLightbulb, frameToDraw, x + global.consumer_offset[consumer_type][0], y - global.consumer_offset[consumer_type][1]);

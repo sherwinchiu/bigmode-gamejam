@@ -123,6 +123,7 @@
     {"id":{"name":"water","path":"sounds/water/water.yy",},},
     {"id":{"name":"wire","path":"sounds/wire/wire.yy",},},
     {"id":{"name":"wood","path":"sounds/wood/wood.yy",},},
+    {"id":{"name":"Frame_44","path":"sprites/Frame_44/Frame_44.yy",},},
     {"id":{"name":"sAirport","path":"sprites/sAirport/sAirport.yy",},},
     {"id":{"name":"sAlarm","path":"sprites/sAlarm/sAlarm.yy",},},
     {"id":{"name":"sApartment","path":"sprites/sApartment/sApartment.yy",},},

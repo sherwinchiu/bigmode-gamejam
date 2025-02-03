@@ -3,5 +3,5 @@
 
 // Inherit the parent event
 event_inherited();
-
+audio_stop_all();
 audio_play_sound(City_12, 1, true);
