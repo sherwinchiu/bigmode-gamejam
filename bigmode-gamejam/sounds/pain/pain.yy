@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"oil",
+  "%Name":"pain",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.253878,
-  "name":"oil",
+  "duration":106.68408,
+  "name":"pain",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"oil.mp3",
+  "soundFile":"pain.mp3",
   "type":0,
-  "volume":0.77,
+  "volume":0.19,
 }
