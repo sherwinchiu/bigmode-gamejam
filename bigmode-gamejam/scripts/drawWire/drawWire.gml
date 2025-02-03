@@ -2,7 +2,7 @@ function drawWire(path, x1, y1, x2, y2, genPath){
 	instance_destroy(oWire, true);
 	if (genPath) {
 		draw_set_colour(c_white);	
-		show_debug_message("drawing");
+		//show_debug_message("drawing");
 		var mid_x = (x1 + x2) / 2;
 	
 		var dist = sqrt(sqr(y2-y1) + sqr(x2-x1));

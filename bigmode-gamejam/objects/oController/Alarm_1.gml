@@ -12,10 +12,10 @@ for(var i = 0; i < 4; i++){
 	}
 }
 
-if (global.week_num/2 < 5) {
-	random_consumer_spawn = random_range(10-global.week_num/2, 14 -global.week_num/2);
+if (global.week_num/2 < 4) {
+	random_consumer_spawn = random_range(10-global.week_num/2, 12 -global.week_num/2);
 } else {
-	random_consumer_spawn = random_range(4, 7);
+	random_consumer_spawn = random_range(4, 6);
 }
 
 

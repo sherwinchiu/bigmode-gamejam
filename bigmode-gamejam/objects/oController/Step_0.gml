@@ -36,7 +36,13 @@ if (percent == 0 && !going_to_lose && !global.paused) {
 	lose_counter = 10;
 }
 checkPower();
-
+if (!audio_is_playing(current_track)) {
+	track_selection++;
+	if (track_selection > 2) {
+		track_selection = 0;	
+	}
+	current_track = audio_play_sound(tracks[track_selection], 1, false);
+}
 	// display demand for consumers
 	//var num_c = array_length(global.allConsumers);
 	//if (num_c > 0) {
