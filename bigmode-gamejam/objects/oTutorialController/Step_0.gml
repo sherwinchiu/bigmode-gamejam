@@ -1,4 +1,3 @@
-show_debug_message(cur_dialogue);
 if (dialogue_timer > 0) {
     dialogue_timer--;
 } else {
@@ -7,7 +6,7 @@ if (dialogue_timer > 0) {
         dialogue_timer = DIALOGUE_TIMER;
         dialogue_break_timer = BREAK_TIMER;
     }
-	if (cur_dialogue == 22) {
+	if (cur_dialogue == 23) {
 		audio_stop_sound(City_12);
 		room_goto(Gameplay);
     }
