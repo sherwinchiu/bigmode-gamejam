@@ -1,3 +1,4 @@
+show_debug_message(cur_dialogue);
 if (dialogue_timer > 0) {
     dialogue_timer--;
 } else {

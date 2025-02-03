@@ -93,6 +93,8 @@ alarm_set(0, 1);
 
 global.score = 0;
 
+global.battery_filled = 0;
+
 global.button1 = 0;
 global.button2 = 0;
 going_to_lose = false;
