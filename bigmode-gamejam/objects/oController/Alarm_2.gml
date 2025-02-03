@@ -6,6 +6,5 @@ lose_counter--;
 if (lose_counter == 0) {
 	room_goto_next();	
 }
-if (!global.paused) {
-	alarm_set(2,  game_get_speed(gamespeed_fps) * 1);
-}
+
+alarm_set(2,  game_get_speed(gamespeed_fps) * 1);
