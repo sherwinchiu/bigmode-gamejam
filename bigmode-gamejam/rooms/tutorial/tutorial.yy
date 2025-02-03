@@ -146,6 +146,7 @@
     {"name":"inst_1662310F","path":"rooms/tutorial/tutorial.yy",},
     {"name":"inst_53FEC8F5","path":"rooms/tutorial/tutorial.yy",},
     {"name":"inst_2FF74A31","path":"rooms/tutorial/tutorial.yy",},
+    {"name":"inst_33520052","path":"rooms/tutorial/tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -161,6 +162,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":700,"effectEnabled":true,"effectType":null,"gridX":120,"gridY":120,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_76710222","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76710222","objectId":{"name":"oSkipButton","path":"objects/oSkipButton/oSkipButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1680.0,"y":960.0,},
         {"$GMRInstance":"v1","%Name":"inst_6B3B5B7B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6B3B5B7B","objectId":{"name":"oTutorialController","path":"objects/oTutorialController/oTutorialController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":720.0,"y":480.0,},
+        {"$GMRInstance":"v1","%Name":"inst_33520052","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33520052","objectId":{"name":"oCameraController","path":"objects/oCameraController/oCameraController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":840.0,"y":480.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Tiles","depth":800,"effectEnabled":true,"effectType":null,"gridX":120,"gridY":120,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_2E04A451","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E04A451","objectId":{"name":"oCoalTile","path":"objects/oCoalTile/oCoalTile.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":960.0,},
