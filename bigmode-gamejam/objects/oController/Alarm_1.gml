@@ -13,5 +13,5 @@ for(var i = 0; i < 4; i++){
 }
 
 
-random_consumer_spawn = random_range(15-global.week_num/2, 20-global.week_num/2);
+random_consumer_spawn = random_range(15-global.week_num/1.5, 20-global.week_num/1.5);
 alarm_set(1, game_get_speed(gamespeed_fps) * random_consumer_spawn); // reset timer

@@ -6,6 +6,6 @@
 
 pauseGame(false);
 global.week_num++;
-global.producer_inv[global.TRANMISSIONTOWERID] += 4;
+global.producer_inv[global.TRANMISSIONTOWERID] += 3;
 
 alarm_set(0, game_get_speed(gamespeed_fps) * 40);  // reset alarm on call
