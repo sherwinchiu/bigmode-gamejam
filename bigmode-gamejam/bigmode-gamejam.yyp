@@ -89,6 +89,7 @@
     {"id":{"name":"oTreeTile","path":"objects/oTreeTile/oTreeTile.yy",},},
     {"id":{"name":"oTreeToolbarButton","path":"objects/oTreeToolbarButton/oTreeToolbarButton.yy",},},
     {"id":{"name":"oTreeWeekDisplay","path":"objects/oTreeWeekDisplay/oTreeWeekDisplay.yy",},},
+    {"id":{"name":"oTutorialController","path":"objects/oTutorialController/oTutorialController.yy",},},
     {"id":{"name":"oWaterProducer","path":"objects/oWaterProducer/oWaterProducer.yy",},},
     {"id":{"name":"oWaterTile","path":"objects/oWaterTile/oWaterTile.yy",},},
     {"id":{"name":"oWaterToolbarButton","path":"objects/oWaterToolbarButton/oWaterToolbarButton.yy",},},
@@ -175,10 +176,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},},
-    {"roomId":{"name":"end_screen","path":"rooms/end_screen/end_screen.yy",},},
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"tutorial","path":"rooms/tutorial/tutorial.yy",},},
+    {"roomId":{"name":"Gameplay","path":"rooms/Gameplay/Gameplay.yy",},},
+    {"roomId":{"name":"end_screen","path":"rooms/end_screen/end_screen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
