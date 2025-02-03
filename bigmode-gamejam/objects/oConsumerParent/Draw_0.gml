@@ -11,7 +11,7 @@ if (current_demand > 0) {
 	draw_circle(x, y, 16, false);
 	draw_set_color(c_white);
 }
-
+draw_set_color(c_white);
 var percentFulfill = (global.consumer_demand[consumer_type] - current_demand) / global.consumer_demand[consumer_type];
 draw_set_font(fTutorial);
 draw_text(x +  global.consumer_offset[consumer_type][0] - 10, y + global.consumer_offset[consumer_type][1] - 25, string(global.consumer_demand[consumer_type]));

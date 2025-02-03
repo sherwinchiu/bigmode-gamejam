@@ -26,7 +26,7 @@ function pauseGame(endWeekOrPauseButton){
 		var chosen_first = 0;
 		depth = 300;
 		for(var i = 0; i < 4; i++) {
-			if (num1 < producer_probability[i]) {
+			if (num1 <= producer_probability[i]) {
 				global.button1 = instance_create_layer(480, 405, "Week_Display", global.week_display_order[i]);
 				chosen_first = i;
 				break;
@@ -34,7 +34,7 @@ function pauseGame(endWeekOrPauseButton){
 		}
 		
 		for(var i = 0; i < 4; i++) {
-			if (num2 < producer_probability[i] && i != chosen_first) {
+			if (num2 <= producer_probability[i] && i != chosen_first) {
 				global.button2 = instance_create_layer(1080, 405, "Week_Display", global.week_display_order[i]);
 				break;
 			}
