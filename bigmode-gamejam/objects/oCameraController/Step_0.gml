@@ -1,25 +1,25 @@
 if (global.week_end && !global.leveled_up) {
-	if (global.cur_level < max_level) {
-		global.cur_level++;
+	global.cur_level++;
+
+	if (global.active_x > 0){
 		global.active_x -= 288;
 		global.active_w += 576;
 		global.active_y -= 162;
 		global.active_h += 324;
-		
-		
-		global.leveled_up = true;
-		
-		instance_deactivate_all(true);
-		instance_activate_object(oLine);
-		instance_activate_layer("Covers");
-		instance_activate_layer("GUI");
-		global.paused = false;
-		instance_activate_layer("Instances");
-		instance_destroy(global.button1);
-		instance_destroy(global.button2);
-		instance_deactivate_layer("Week_Display");
-		instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 	}
+		
+	global.leveled_up = true;
+		
+	instance_deactivate_all(true);
+	instance_activate_object(oLine);
+	instance_activate_layer("Covers");
+	instance_activate_layer("GUI");
+	global.paused = false;
+	instance_activate_layer("Instances");
+	instance_destroy(global.button1);
+	instance_destroy(global.button2);
+	instance_deactivate_layer("Week_Display");
+	instance_activate_region(global.active_x, global.active_y, global.active_w, global.active_h, true);
 }
 
 if (mouse_check_button_pressed(mb_middle)) {

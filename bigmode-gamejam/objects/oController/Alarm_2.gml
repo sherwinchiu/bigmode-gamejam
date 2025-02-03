@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-show_debug_message("you lose!");
-room_goto_next();
+lose_counter--;
+
+if (lose_counter == 0) {
+	room_goto_next();	
+}
+if (!global.paused) {
+	alarm_set(2,  game_get_speed(gamespeed_fps) * 1);
+}

@@ -47,7 +47,7 @@ global.TRANMISSIONTOWERID = 4; // *****TEMPORARY FOR TESTING*****
 
 // track producer points
 global.producer_energy = [3, 1, 2, 10];
-global.producer_inv = [2, 4, 2, 1, 5];
+global.producer_inv = [1, 4, 2, 1, 5];
 global.producers_to_add = [2, 6, 3, 1];
 global.curProvided = 0;
 
@@ -87,4 +87,5 @@ global.button1 = 0;
 global.button2 = 0;
 going_to_lose = false;
 percent = 0;
+lose_counter = 10;
 global.isTouchingToolbar = false;
