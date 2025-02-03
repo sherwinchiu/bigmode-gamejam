@@ -3,6 +3,7 @@ if (dialogue_break_timer > 0) {
 	dialogue_break_timer--;
 } else {
 	if (dialogue_timer > 0) {
+		cur_dialogue = clamp(cur_dialogue, 0, 22);
 		draw_sprite(dialogue_arr[cur_dialogue], 0, 960, 150);
 		draw_set_color(c_black);
 		draw_set_font(fTutorial);

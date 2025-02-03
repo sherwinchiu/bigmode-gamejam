@@ -1,20 +1,22 @@
 /// @description On Gameplay Start
-DIALOGUE_TIMER = game_get_speed(gamespeed_fps) * 1;
-BREAK_TIMER = game_get_speed(gamespeed_fps) * 0.2;
+DIALOGUE_TIMER = game_get_speed(gamespeed_fps) * 5;
+BREAK_TIMER = game_get_speed(gamespeed_fps) * 0.5;
 dialogue_timer = DIALOGUE_TIMER;
 dialogue_break_timer = BREAK_TIMER;
-cur_dialogue = 0;
-dialogue_arr = [sTutorial2, sTutorial2b, sTutorial4, sTutorial2a, sTutorial3, sTutorial3a, sTutorial5, sTutorial2a, sTutorial4a, sTutorial5, sTutorial4a, sTutorial2a, sTutorial3a, sTutorial4, sTutorial5, sTutorial5, sTutorial3, sTutorial3a, sTutorial5, sTutorial4a, sTutorial4a, sTutorial2a, sTutorial3, sTutorial2];
-dialogue_text = ["Welcome to [game name]!", "Based on the theme of \"Power\"", "[game name] is about keeping the city powered!", "This is a power producer.", "Click on the coal producer to select it.", "Click on a coal mine tile (navy) to place it.", "The number indicates how much power the producer provides.", "This is a power consumer.", "The lightbulb indicates how \"powered\" each consumer is.", "The number indicates how much power the consumer needs.", "You cannot directly connect producers with consumers.", "This is a transmission tower.", "Click on the transmission tower to select it.", "Click somewhere to place the transmission tower.", "Drag from the coal mine to the transmission tower to connect them.", "Drag from the transmission tower to the house to connect them.", "Nice! This house is now fully powered.", "These are the other available producers.", "Oil sands are yellow, tree tiles are green, and water tiles are blue.", "Each producer generates a different amount of power.", "At the end of each week, you receive more materials.", "Choose the oil rig producer.", "Select and place an oil rig producer.", "Power the factory!", "Nice! The oil rig provided enough power for the factory.", "The battery at the top shows the overall level of power.", "If your city goes without power for too long, you lose :(", "The clock lets you keep track of when you’ll get more resources.", "You have completed the tutorial. Good luck and have fun!"];
-next_state = "";
+cur_dialogue = 20;
+dialogue_arr = [sTutorial2, sTutorial2b, sTutorial4, sTutorial2a, sTutorial3, sTutorial3a, sTutorial5, sTutorial2a, sTutorial4a, sTutorial5, sTutorial4a, sTutorial2a, sTutorial3a, sTutorial4, sTutorial5, sTutorial5, sTutorial3, sTutorial3a, sTutorial5, sTutorial4a, sTutorial4a, sTutorial4a, sTutorial4a];
+dialogue_text = ["Welcome to electriCity!", "Based on the theme of \"Power\"", "electriCity is about keeping the city powered!", "This is a power producer.", "Click on the coal producer to select it.", "Click on a coal mine tile (navy) to place it.", "The number indicates how much power the producer provides.", "This is a power consumer.", "The lightbulb indicates how \"powered\" each consumer is.", "The number indicates how much power the consumer needs.", "You cannot directly connect producers with consumers.", "This is a transmission tower.", "Click on the transmission tower to select it.", "Click somewhere to place the transmission tower.", "Drag from the coal mine to the transmission tower to connect them.", "Drag from the transmission tower to the house to connect them.", "Nice! This house is now fully powered.", "These are the other available producers.", "Oil sands are yellow, tree tiles are green, and water tiles are blue.", "Each producer generates a different amount of power.", "At the end of each week, you receive more materials.", "If your city goes without power for too long, you lose :(", "You have completed the tutorial. Good luck and have fun!"];
 house_spawned = false;
 alreadyPaused = false;
 global.tutorial = true;
 randomize();
+show_debug_message(array_length(dialogue_arr));
+show_debug_message(array_length(dialogue_text));
 selected_circle = noone;
 dragging_wire = false;
-
-
+buttonSpawned = false;
+sixteenDone = false;
+// 5 battery bars = all powered, anything unpowered is lower battery bar can have max 5 things unpowered
 global.controller = self; 
 
 // reset viewport and camera
